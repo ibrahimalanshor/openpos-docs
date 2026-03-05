@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../../assets/logo.png';
+---
+
+<nav>
+  <Image src={Logo} alt="OpenPos - Logo" />
+  <a href="/">OpenPos</a>
+  <ul>
+    <li>
+      <a href="#features">Fitur</a>
+    </li>
+    <li>
+      <a href="#pricing">Harga</a>
+    </li>
+    <li>
+      <a href="/docs">Panduan</a>
+    </li>
+    <div>
+      <a href="/register">Coba Gratis</a>
+    </div>
+  </ul>
+</nav>
