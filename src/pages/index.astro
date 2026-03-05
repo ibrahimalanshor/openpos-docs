@@ -2,6 +2,39 @@
 import Default from '../components/layouts/Default.astro';
 import Hero from '../assets/hero.jpg';
 import { Image } from 'astro:assets';
+
+const features = [
+  {
+    name: 'Pengelolaan Stok Lengkap',
+    description:
+      'Kelola stok barang, stok opname, riwayat pergerakan stok, restok ke supplier, dan peringatan stok menipis',
+  },
+  {
+    name: 'Penjualan Barang',
+    description:
+      'Jual barang ke customer, lengkap dengan diskon, scan barcode, perhitungan total, metode pembayaran, dan cetak struk',
+  },
+  {
+    name: 'Shift Kasir dan Uang Kas',
+    description:
+      'Pantau kinerja kasir dengan melihat riwayat shift dan pergerakan uang kas pada saat shift kasir',
+  },
+  {
+    name: 'Laporan Lengkap',
+    description:
+      'Otomatis pembuatan laporan penjualan, stok, shift, pengeluaran, laba dan bisa diatur periodenya',
+  },
+  {
+    name: 'Perhitungan HPP Otomatis',
+    description:
+      'Aplikasi mampu menghitung HPP barang otomatis dengan metode average (rata-rata) yang berubah setiap restok barang',
+  },
+  {
+    name: 'Perhitungan Laba dan Margin',
+    description:
+      'Aplikasi dapat menghitung laba dan margin toko otomatis secara lengkap dan akurat per bulan',
+  },
+];
 ---
 
 <Default>
@@ -21,4 +54,22 @@ import { Image } from 'astro:assets';
     </div>
     <Image src={Hero} alt="Tampilan Aplikasi Kasir Openpos" />
   </header>
+
+  <section>
+    <h1>Fitur Pengelolaan Toko Lengkap</h1>
+    <p>
+      Dapat mempermudah operasional toko dan meningkatkan keakuratan data stok,
+      laporan, dst.
+    </p>
+    <div>
+      {
+        features.map((feature) => (
+          <article>
+            <h2>{feature.name}</h2>
+            <p>{feature.description}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
 </Default>
