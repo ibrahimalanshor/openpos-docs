@@ -1,5 +1,24 @@
 ---
 import Default from '../components/layouts/Default.astro';
+import Hero from '../assets/hero.jpg';
+import { Image } from 'astro:assets';
 ---
 
-<Default />
+<Default>
+  <header>
+    <p>Solusi Untuk Toko dan Minimarket</p>
+    <h1>
+      Aplikasi Kasir Digital Untuk Kelola Toko dan Minimarket Jadi Lebih Mudah
+    </h1>
+    <p>
+      Openpos siap menjadi alat digital untuk membantu anda dalam mengelola toko
+      anda menjadi lebih mudah, seperti stok, penjualan, hingga laporan laba
+      lengkap dan otomatis.
+    </p>
+    <div>
+      <a href="/try">Coba Sekarang</a>
+      <a href="/demo">Lihat Demo</a>
+    </div>
+    <Image src={Hero} alt="Tampilan Aplikasi Kasir Openpos" />
+  </header>
+</Default>
