@@ -35,6 +35,34 @@ const features = [
       'Aplikasi dapat menghitung laba dan margin toko otomatis secara lengkap dan akurat per bulan',
   },
 ];
+const prices = [
+  {
+    name: 'Basic',
+    description: 'Semua fitur lengkap',
+    price: 'Rp 59.000',
+    features: [
+      'Semua Fitur',
+      'Gratis Domain',
+      'Gratis Hosting',
+      'Gratis Support',
+    ],
+  },
+  {
+    name: 'Custom',
+    description: 'Semua fitur + custom fitur',
+    price: 'Custom',
+    features: [
+      'Semua Fitur',
+      'Gratis Domain',
+      'Gratis Hosting',
+      'Gratis Support',
+      'Gratis Maintenance',
+      'Custom Fitur',
+      'Custom Tampilan',
+      'Harga Fleksibel',
+    ],
+  },
+];
 ---
 
 <Default>
@@ -67,6 +95,28 @@ const features = [
           <article>
             <h2>{feature.name}</h2>
             <p>{feature.description}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section>
+    <h1>Daftar Harga</h1>
+    <p>Harga murah dan fleksibel untuk apliakasi kasir lengkap</p>
+    <div>
+      {
+        prices.map((price) => (
+          <article>
+            <h2>{price.name}</h2>
+            <p>{price.description}</p>
+            <p>{price.price}</p>
+            <ul>
+              {price.features.map((feature) => (
+                <li>{feature}</li>
+              ))}
+            </ul>
+            <a href="/checkout">Coba Sekarang</a>
           </article>
         ))
       }
