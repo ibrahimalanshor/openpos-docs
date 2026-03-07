@@ -1,23 +1,97 @@
 ---
 import { Image } from 'astro:assets';
 import Logo from '../../assets/logo.png';
+import { Icon } from 'astro-icon/components';
 ---
 
-<nav>
-  <Image src={Logo} alt="OpenPos - Logo" />
-  <a href="/">OpenPos</a>
-  <ul>
-    <li>
-      <a href="#features">Fitur</a>
-    </li>
-    <li>
-      <a href="#pricing">Harga</a>
-    </li>
-    <li>
-      <a href="/docs">Panduan</a>
-    </li>
-    <div>
-      <a href="/register">Coba Gratis</a>
+<nav class="px-4 h-16 border-b border-gray-200 flex items-center relative">
+  <div class="container mx-auto flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <Image src={Logo} alt="OpenPos - Logo" class="w-10" />
+      <a href="/" class="font-bold text-lg text-gray-900">OpenPos</a>
     </div>
-  </ul>
+    <button id="navbar-toggle" class="md:hidden">
+      <Icon name="tabler:menu-2" class="text-gray-700" />
+    </button>
+    <div
+      id="navbar-content-wrapper"
+      class="hidden opacity-0 transition fixed top-0 right-0 bg-black/50 h-screen w-full md:block md:opacity-100 md:static md:bg-transparent md:h-auto md:w-auto"
+    >
+      <div
+        id="navbar-content"
+        class="bg-white w-64 ml-auto h-full p-6 space-y-4 transition translate-x-full relative md:static md:translate-none md:bg-transparent md:w-auto md:space-y-0 md:p-0"
+      >
+        <div
+          id="navbar-close"
+          class="text-right absolute top-4 right-4 md:hidden"
+        >
+          <button>
+            <Icon name="tabler:x" class="text-gray-700" />
+          </button>
+        </div>
+        <ul
+          class="flex flex-col gap-4 text-gray-700 md:absolute md:left-1/2 md:gap-8 md:text-gray-500 mt-8 md:mt-0 md:flex-row md:-translate-x-1/2 md:h-full md:top-0 md:items-center"
+        >
+          <li>
+            <a href="#features" class="hover:text-gray-900">Fitur</a>
+          </li>
+          <li>
+            <a href="#pricing" class="hover:text-gray-900">Harga</a>
+          </li>
+          <li>
+            <a href="/docs" class="hover:text-gray-900">Panduan</a>
+          </li>
+        </ul>
+        <hr class="border-gray-200 md:hidden" />
+        <a
+          href="/register"
+          class="w-full inline-flex bg-blue-600 text-white h-10 md:h-9 px-3 rounded-lg items-center justify-center text-sm font-medium hover:bg-blue-700"
+          >Coba Gratis</a
+        >
+      </div>
+    </div>
+  </div>
 </nav>
+
+<script>
+  const navbarToggle = document.querySelector('#navbar-toggle')!;
+  const navbarClose = document.querySelector('#navbar-close')!;
+  const navbarContentWrapper = document.querySelector(
+    '#navbar-content-wrapper',
+  )!;
+  const navbarContent = document.querySelector('#navbar-content')!;
+
+  navbarToggle.addEventListener('click', () => {
+    navbarContentWrapper.classList.remove('hidden');
+
+    requestAnimationFrame(() => {
+      navbarContentWrapper.classList.remove('opacity-0');
+      navbarContentWrapper.classList.add('opacity-100');
+
+      navbarContent.classList.remove('translate-x-full');
+      navbarContent.classList.add('translate-x-0');
+    });
+  });
+
+  navbarClose.addEventListener('click', () => {
+    closeNavbar();
+  });
+
+  navbarContentWrapper.addEventListener('click', (e) => {
+    if (navbarContentWrapper.classList.contains('opacity-100')) {
+      if (!navbarContent.contains(e.target as HTMLElement)) {
+        closeNavbar();
+      }
+    }
+  });
+
+  function closeNavbar() {
+    navbarContentWrapper.classList.add('opacity-0');
+    navbarContentWrapper.classList.remove('opacity-100');
+
+    navbarContent.classList.add('translate-x-full');
+    navbarContent.classList.remove('translate-x-0');
+
+    setTimeout(() => navbarContentWrapper.classList.add('hidden'), 300);
+  }
+</script>
