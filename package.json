@@ -10,7 +10,11 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "astro": "^5.17.1"
+    "@iconify-json/tabler": "^1.2.30",
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "^5.17.1",
+    "astro-icon": "^1.1.5",
+    "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.56.1",
