@@ -4,35 +4,42 @@ import Hero from '../assets/hero.jpg';
 import { Image } from 'astro:assets';
 import Container from '../components/base/Container.astro';
 import Button from '../components/base/Button.astro';
+import { Icon } from 'astro-icon/components';
 
 const features = [
   {
     name: 'Pengelolaan Stok Lengkap',
+    icon: 'tabler:cube',
     description:
       'Kelola stok barang, stok opname, riwayat pergerakan stok, restok ke supplier, dan peringatan stok menipis',
   },
   {
     name: 'Penjualan Barang',
+    icon: 'tabler:calculator',
     description:
       'Jual barang ke customer, lengkap dengan diskon, scan barcode, perhitungan total, metode pembayaran, dan cetak struk',
   },
   {
     name: 'Shift Kasir dan Uang Kas',
+    icon: 'tabler:clock',
     description:
       'Pantau kinerja kasir dengan melihat riwayat shift dan pergerakan uang kas pada saat shift kasir',
   },
   {
     name: 'Laporan Lengkap',
+    icon: 'tabler:file-report',
     description:
       'Otomatis pembuatan laporan penjualan, stok, shift, pengeluaran, laba dan bisa diatur periodenya',
   },
   {
     name: 'Perhitungan HPP Otomatis',
+    icon: 'tabler:discount',
     description:
       'Aplikasi mampu menghitung HPP barang otomatis dengan metode average (rata-rata) yang berubah setiap restok barang',
   },
   {
     name: 'Perhitungan Laba dan Margin',
+    icon: 'tabler:report-money',
     description:
       'Aplikasi dapat menghitung laba dan margin toko otomatis secara lengkap dan akurat per bulan',
   },
@@ -77,7 +84,7 @@ const prices = [
         Solusi Untuk Toko dan Minimarket
       </p>
       <h1
-        class="font-bold text-gray-900 text-4xl tracking-tight leading-tight lg:text-5xl"
+        class="font-bold text-gray-900 text-4xl tracking-tight leading-tight lg:text-5xl xl:text-6xl"
       >
         Aplikasi Kasir Digital Untuk Kelola Toko Jadi Lebih Mudah
       </h1>
@@ -106,22 +113,35 @@ const prices = [
     </div>
   </Container>
 
-  <section>
-    <h1>Fitur Pengelolaan Toko Lengkap</h1>
-    <p>
-      Dapat mempermudah operasional toko dan meningkatkan keakuratan data stok,
-      laporan, dst.
-    </p>
-    <div>
-      {
-        features.map((feature) => (
-          <article>
-            <h2>{feature.name}</h2>
-            <p>{feature.description}</p>
-          </article>
-        ))
-      }
-    </div>
+  <section class="bg-gray-50">
+    <Container class="py-20 space-y-12">
+      <div class="text-center space-y-4">
+        <h1 class="font-bold text-gray-900 text-3xl tracking-tight">
+          Fitur Pengelolaan Toko Lengkap
+        </h1>
+        <p class="text-gray-500">
+          Dapat mempermudah operasional toko dan meningkatkan keakuratan data
+          stok, laporan, dst.
+        </p>
+      </div>
+      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        {
+          features.map((feature) => (
+            <article class="bg-white rounded-xl border border-gray-200 p-6 space-y-4">
+              <div class="bg-blue-100 text-blue-900 w-10 h-10 rounded-lg flex items-center justify-center">
+                <Icon name={feature.icon} class="size-5" />
+              </div>
+              <div class="space-y-2">
+                <h2 class="font-semibold text-gray-900 text-lg">
+                  {feature.name}
+                </h2>
+                <p class="text-gray-500">{feature.description}</p>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </Container>
   </section>
 
   <section>
