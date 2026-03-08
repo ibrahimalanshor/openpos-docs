@@ -1,0 +1,32 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  tag?: 'button' | 'a';
+  class?: string;
+  icon?: string;
+  color?: 'primary' | 'light';
+  [key: string]: any;
+}
+
+const {
+  tag: Tag = 'button',
+  class: classList = '',
+  icon,
+  color = 'primary',
+  ...params
+} = Astro.props;
+
+const colorClassList = {
+  primary: 'bg-blue-600 text-white hover:bg-blue-700',
+  light: 'bg-white text-gray-900 border border-gray-200 hover:bg-gray-100',
+}[color];
+---
+
+<Tag
+  {...params}
+  class={`inline-flex items-center gap-2 justify-center text-sm font-medium ${classList} ${colorClassList}`}
+>
+  <slot />
+  {icon && <Icon name={icon} class="size-4 shrink-0" />}
+</Tag>

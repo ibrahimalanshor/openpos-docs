@@ -2,12 +2,14 @@
 import { Image } from 'astro:assets';
 import Logo from '../../assets/logo.png';
 import { Icon } from 'astro-icon/components';
+import Container from '../base/Container.astro';
+import Button from '../base/Button.astro';
 ---
 
-<nav class="px-4 h-16 border-b border-gray-200 flex items-center relative">
-  <div class="container mx-auto flex items-center justify-between">
+<nav class="h-16 border-b border-gray-200 flex items-center relative">
+  <Container class="flex items-center justify-between">
     <div class="flex items-center gap-2">
-      <Image src={Logo} alt="OpenPos - Logo" class="w-10" />
+      <Image src={Logo} alt="OpenPos - Logo" class="w-8" />
       <a href="/" class="font-bold text-lg text-gray-900">OpenPos</a>
     </div>
     <button id="navbar-toggle" class="md:hidden">
@@ -43,14 +45,14 @@ import { Icon } from 'astro-icon/components';
           </li>
         </ul>
         <hr class="border-gray-200 md:hidden" />
-        <a
+        <Button
+          tag="a"
           href="/register"
-          class="w-full inline-flex bg-blue-600 text-white h-10 md:h-9 px-3 rounded-lg items-center justify-center text-sm font-medium hover:bg-blue-700"
-          >Coba Gratis</a
+          class="w-full h-10 md:h-9 px-3.5 rounded-lg">Coba Gratis</Button
         >
       </div>
     </div>
-  </div>
+  </Container>
 </nav>
 
 <script>

@@ -1,0 +1,7 @@
+---
+const { class: classList = '', tag: Tag = 'div' } = Astro.props;
+---
+
+<Tag class={`container mx-auto px-4 ${classList}`}>
+  <slot />
+</Tag>
