@@ -13,41 +13,42 @@ const features = [
     name: 'Pengelolaan Stok Lengkap',
     icon: 'tabler:cube',
     description:
-      'Kelola stok barang, stok opname, riwayat pergerakan stok, restok ke supplier, dan peringatan stok menipis',
+      'Kelola stok barang, stok opname, riwayat pergerakan stok, restok ke supplier, dan peringatan stok menipis.',
   },
   {
     name: 'Penjualan Barang',
     icon: 'tabler:calculator',
     description:
-      'Jual barang ke customer, lengkap dengan diskon, scan barcode, perhitungan total, metode pembayaran, dan cetak struk',
+      'Jual barang ke customer, bisa diskon, scan barcode, perhitungan total, metode pembayaran, dan cetak struk.',
   },
   {
     name: 'Shift Kasir dan Uang Kas',
     icon: 'tabler:clock',
     description:
-      'Pantau kinerja kasir dengan melihat riwayat shift dan pergerakan uang kas pada saat shift kasir',
+      'Pantau kinerja kasir dengan melihat shift dan pergerakan uang kas pada saat shift kasir.',
   },
   {
     name: 'Laporan Lengkap',
     icon: 'tabler:file-report',
     description:
-      'Otomatis pembuatan laporan penjualan, stok, shift, pengeluaran, laba dan bisa diatur periodenya',
+      'Otomatis pembuatan laporan penjualan, stok, shift, pengeluaran, laba dan per bulan, hari dan tahun.',
   },
   {
     name: 'Perhitungan HPP Otomatis',
     icon: 'tabler:discount',
     description:
-      'Aplikasi mampu menghitung HPP barang otomatis dengan metode average (rata-rata) yang berubah setiap restok barang',
+      'Menghitung HPP barang otomatis dengan metode average (rata-rata) yang berubah setiap restok barang.',
   },
   {
     name: 'Perhitungan Laba dan Margin',
     icon: 'tabler:report-money',
     description:
-      'Aplikasi dapat menghitung laba dan margin toko otomatis secara lengkap dan akurat per bulan',
+      'Menghitung laba dan margin toko secara otomatis dan lengkap, akurat per bulan.',
   },
 ];
 const prices = [
   {
+    id: 'basic',
     name: 'Basic',
     description: 'Semua fitur lengkap',
     price: 'Rp 59.000',
@@ -60,6 +61,7 @@ const prices = [
     ],
   },
   {
+    id: 'custom',
     name: 'Custom',
     description: 'Semua fitur + custom fitur',
     price: null,
@@ -79,141 +81,150 @@ const prices = [
 ---
 
 <Default>
-  <Container
-    tag="header"
-    class="py-16 grid items-center gap-12 md:grid-cols-2 md:py-24"
-  >
-    <div class="space-y-6">
-      <p class="text-blue-600 uppercase font-medium tracking-wide text-sm">
-        Solusi Untuk Toko dan Minimarket
-      </p>
-      <h1
-        class="font-bold text-gray-900 text-4xl tracking-tight leading-tight lg:text-5xl xl:text-6xl"
-      >
-        Aplikasi Kasir Digital Untuk Kelola Toko Jadi Lebih Mudah
-      </h1>
-      <p class="text-gray-500 text-lg leading-relaxed">
-        Mengelola barang, stok, penjualan, shift, uang kas, laporan, hingga
-        hitung laba toko secara otomatis dan lengkap.
-      </p>
-      <div class="grid grid-cols-2 gap-2 md:flex">
-        <Button
-          tag="a"
-          icon="tabler:arrow-right"
-          class="h-11 px-8 rounded-lg"
-          href="/try">Coba Sekarang</Button
-        >
-        <Button tag="a" class="h-11 px-8 rounded-lg" color="light" href="/demo"
-          >Lihat Demo</Button
-        >
-      </div>
-    </div>
-    <div>
-      <Image
-        src={Hero}
-        alt="Tampilan Aplikasi Kasir Openpos"
-        class="rounded-2xl object-cover max-h-[600px]"
-      />
-    </div>
-  </Container>
-
-  <Section
-    color="dark"
-    title="Fitur Pengelolaan Toko Lengkap"
-    subtitle="Dapat mempermudah operasional toko dan meningkatkan keakuratan data
-          stok, laporan, dst."
-  >
-    <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-      {
-        features.map((feature) => (
-          <Card>
-            <div class="bg-blue-100 text-blue-900 w-10 h-10 rounded-lg flex items-center justify-center">
-              <Icon name={feature.icon} class="size-5" />
-            </div>
-            <div class="space-y-2">
-              <h2 class="font-semibold text-gray-900 text-lg">
-                {feature.name}
-              </h2>
-              <p class="text-gray-500">{feature.description}</p>
-            </div>
-          </Card>
-        ))
-      }
-    </div>
-  </Section>
-
-  <Section
-    title="Daftar Harga"
-    subtitle="Harga murah dan fleksibel untuk aplikasi kasir lengkap."
-  >
-    <div class="grid gap-4 md:grid-cols-2 lg:flex lg:justify-center">
-      {
-        prices.map((price) => (
-          <Card
-            customColor={price.featured}
-            class={`${price.featured ? 'border border-blue-600 bg-blue-600/5 shadow-lg shadow-blue-600/10 ring-1 ring-blue-600/20' : ''} flex flex-col justify-between lg:min-w-80`}
-          >
-            <div class="space-y-4">
-              <div class="space-y-1">
-                <h2 class="font-semibold text-gray-900 text-xl">
-                  {price.name}
-                </h2>
-                <p class="text-gray-500">{price.description}</p>
-              </div>
-              <p class="font-bold text-3xl text-gray-900">
-                {price.price ?? 'Rp Custom'}
-                {price.price && (
-                  <span class="text-sm font-normal text-gray-500">/bulan</span>
-                )}
-              </p>
-              <ul class="space-y-2">
-                {price.features.map((feature) => (
-                  <li class="flex items-center gap-2">
-                    <Icon name="tabler:check" class="text-blue-600" />
-                    <span class="text-gray-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <Button
-              tag="a"
-              class="h-10 w-full rounded-lg"
-              href="/checkout"
-              color={price.featured ? 'primary' : 'light'}
-            >
-              Coba Sekarang
-            </Button>
-          </Card>
-        ))
-      }
-    </div>
-  </Section>
-
-  <section class="bg-blue-600 text-white py-24 text-center">
-    <Container class="space-y-8">
-      <div class="space-y-4">
-        <h2 class="font-bold text-3xl tracking-tight md:text-4xl">
-          Tertarik Untuk Mencoba?
-        </h2>
-        <p class="text-lg text-blue-100 leading-relaxed max-w-lg mx-auto">
-          Hubungi kami segera untuk mencoba aplikasi kasir kami, atau jadwalkan
-          demo aplikasi gratis.
+  <main>
+    <Container
+      tag="header"
+      class="py-16 grid items-center gap-12 md:grid-cols-2 md:py-24"
+    >
+      <div class="space-y-6">
+        <p class="text-blue-600 uppercase font-medium tracking-wide text-sm">
+          Solusi Untuk Toko dan Minimarket
         </p>
+        <h1
+          class="font-bold text-gray-900 text-4xl tracking-tight leading-tight lg:text-5xl xl:text-6xl"
+        >
+          Aplikasi Kasir Digital Untuk Kelola Toko Jadi Lebih Mudah
+        </h1>
+        <p class="text-gray-500 text-lg leading-relaxed">
+          Mengelola barang, stok, penjualan, shift, uang kas, laporan, hingga
+          hitung laba toko secara otomatis dan lengkap.
+        </p>
+        <div class="grid grid-cols-2 gap-2 md:flex">
+          <Button
+            tag="a"
+            icon="tabler:arrow-right"
+            class="h-11 px-8 rounded-lg"
+            href="/try">Coba Sekarang</Button
+          >
+          <Button
+            tag="a"
+            class="h-11 px-8 rounded-lg"
+            color="light"
+            href="/demo">Lihat Demo</Button
+          >
+        </div>
       </div>
-      <div class="grid grid-cols-2 gap-2 md:flex md:justify-center">
-        <Button
-          tag="a"
-          color="light"
-          class="h-11 px-8 rounded-lg border-0"
-          href="/try">Coba Sekarang</Button
-        >
-        <Button
-          tag="a"
-          color="transparent"
-          class="h-11 px-8 rounded-lg border-0 hover:bg-white hover:text-gray-900"
-          href="/try">Jadwalkan Demo</Button
-        >
+      <div>
+        <Image
+          src={Hero}
+          alt="Tampilan Aplikasi Kasir OpenPos"
+          class="rounded-2xl object-cover max-h-[600px]"
+        />
       </div>
     </Container>
-  </section>
+
+    <Section
+      id="features"
+      color="dark"
+      title="Fitur Pengelolaan Toko Lengkap"
+      subtitle="Dapat mempermudah operasional toko dan meningkatkan keakuratan data
+          stok, laporan, dst."
+    >
+      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        {
+          features.map((feature) => (
+            <Card>
+              <div class="bg-blue-100 text-blue-900 w-10 h-10 rounded-lg flex items-center justify-center">
+                <Icon name={feature.icon} class="size-5" />
+              </div>
+              <div class="space-y-2">
+                <h2 class="font-semibold text-gray-900 text-lg">
+                  {feature.name}
+                </h2>
+                <p class="text-gray-500">{feature.description}</p>
+              </div>
+            </Card>
+          ))
+        }
+      </div>
+    </Section>
+
+    <Section
+      id="pricing"
+      title="Daftar Harga"
+      subtitle="Harga murah dan fleksibel untuk aplikasi kasir lengkap."
+    >
+      <div class="grid gap-4 md:grid-cols-2 lg:flex lg:justify-center">
+        {
+          prices.map((price) => (
+            <Card
+              customColor={price.featured}
+              class={`${price.featured ? 'border border-blue-600 bg-blue-600/5 shadow-lg shadow-blue-600/10 ring-1 ring-blue-600/20' : ''} flex flex-col justify-between lg:min-w-80`}
+            >
+              <div class="space-y-4">
+                <div class="space-y-1">
+                  <h2 class="font-semibold text-gray-900 text-xl">
+                    {price.name}
+                  </h2>
+                  <p class="text-gray-500">{price.description}</p>
+                </div>
+                <p class="font-bold text-3xl text-gray-900">
+                  {price.price ?? 'Rp Custom'}
+                  {price.price && (
+                    <span class="text-sm font-normal text-gray-500">
+                      /bulan
+                    </span>
+                  )}
+                </p>
+                <ul class="space-y-2">
+                  {price.features.map((feature) => (
+                    <li class="flex items-center gap-2">
+                      <Icon name="tabler:check" class="text-blue-600" />
+                      <span class="text-gray-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <Button
+                tag="a"
+                class="h-10 w-full rounded-lg"
+                href={`/checkout/${price.id}`}
+                color={price.featured ? 'primary' : 'light'}
+              >
+                Coba Sekarang
+              </Button>
+            </Card>
+          ))
+        }
+      </div>
+    </Section>
+
+    <section class="bg-blue-600 text-white py-24 text-center">
+      <Container class="space-y-8">
+        <div class="space-y-4">
+          <h2 class="font-bold text-3xl tracking-tight md:text-4xl">
+            Tertarik Untuk Mencoba?
+          </h2>
+          <p class="text-lg text-blue-100 leading-relaxed max-w-lg mx-auto">
+            Hubungi kami segera untuk mencoba aplikasi kasir kami, atau
+            jadwalkan demo aplikasi gratis.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 md:flex md:justify-center">
+          <Button
+            tag="a"
+            color="light"
+            class="h-11 px-8 rounded-lg border-0"
+            href="/try">Coba Sekarang</Button
+          >
+          <Button
+            tag="a"
+            color="transparent"
+            class="h-11 px-8 rounded-lg border-0 hover:bg-white hover:text-gray-900"
+            href="/demo">Jadwalkan Demo</Button
+          >
+        </div>
+      </Container>
+    </section>
+  </main>
 </Default>

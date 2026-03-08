@@ -1,18 +1,14 @@
 ---
-import { Image } from 'astro:assets';
-import Logo from '../../assets/logo.png';
 import { Icon } from 'astro-icon/components';
 import Container from '../base/Container.astro';
 import Button from '../base/Button.astro';
+import Logo from './Logo.astro';
 ---
 
 <nav class="h-16 border-b border-gray-200 flex items-center relative">
   <Container class="flex items-center justify-between">
-    <div class="flex items-center gap-2">
-      <Image src={Logo} alt="OpenPos - Logo" class="w-8" />
-      <a href="/" class="font-bold text-lg text-gray-900">OpenPos</a>
-    </div>
-    <button id="navbar-toggle" class="md:hidden">
+    <Logo />
+    <button id="navbar-toggle" class="md:hidden" title="Buka Menu Navigasi">
       <Icon name="tabler:menu-2" class="text-gray-700" />
     </button>
     <div
@@ -23,11 +19,8 @@ import Button from '../base/Button.astro';
         id="navbar-content"
         class="bg-white w-64 ml-auto h-full p-6 space-y-4 transition translate-x-full relative md:static md:translate-none md:bg-transparent md:w-auto md:space-y-0 md:p-0"
       >
-        <div
-          id="navbar-close"
-          class="text-right absolute top-4 right-4 md:hidden"
-        >
-          <button>
+        <div class="text-right absolute top-4 right-4 md:hidden">
+          <button title="Tutup Menu Navigasi" id="navbar-close">
             <Icon name="tabler:x" class="text-gray-700" />
           </button>
         </div>
@@ -45,10 +38,8 @@ import Button from '../base/Button.astro';
           </li>
         </ul>
         <hr class="border-gray-200 md:hidden" />
-        <Button
-          tag="a"
-          href="/register"
-          class="w-full h-10 md:h-9 px-3.5 rounded-lg">Coba Gratis</Button
+        <Button tag="a" href="/try" class="w-full h-10 md:h-9 px-3.5 rounded-lg"
+          >Coba Gratis</Button
         >
       </div>
     </div>

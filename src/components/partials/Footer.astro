@@ -1,31 +1,29 @@
 ---
-import { Image } from 'astro:assets';
-import Logo from '../../assets/logo.png';
 import Container from '../base/Container.astro';
 import { Icon } from 'astro-icon/components';
+import Logo from './Logo.astro';
 ---
 
 <Container
   tag="footer"
   class="py-10 flex flex-col items-center text-center gap-6 relative lg:flex-row lg:justify-between"
 >
-  <div class="flex items-center gap-2">
-    <Image src={Logo} alt="OpenPos - Logo" class="w-8" />
-    <a href="/" class="font-bold text-gray-900 text-lg">OpenPos</a>
-  </div>
+  <Logo />
   <ul
     class="flex flex-col items-center gap-2 md:flex-row md:gap-4 lg:absolute lg:left-1/2 lg:-translate-x-1/2"
   >
     <li>
       <a
         class="flex items-center gap-2 text-gray-500 hover:text-gray-900"
-        href="#features"><Icon name="tabler:phone" />+62 8224 3213</a
+        href="https://wa.me/6282443213"
+        ><Icon name="tabler:phone" />+62 8224 3213</a
       >
     </li>
     <li>
       <a
         class="flex items-center gap-2 text-gray-500 hover:text-gray-900"
-        href="#features"><Icon name="tabler:mail" />openpos@narakode.id</a
+        href="mailto:openpos@narakode.id"
+        ><Icon name="tabler:mail" />openpos@narakode.id</a
       >
     </li>
   </ul>

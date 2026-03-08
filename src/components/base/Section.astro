@@ -1,12 +1,12 @@
 ---
 import Container from './Container.astro';
 
-const { title, subtitle, color = 'light' } = Astro.props;
+const { title, subtitle, color = 'light', id = '' } = Astro.props;
 
 const colorClassList = color === 'dark' ? 'bg-gray-50' : '';
 ---
 
-<section class={`${colorClassList}`}>
+<section class={`${colorClassList}`} id={id}>
   <Container class="py-20 space-y-12">
     <div class="text-center space-y-4">
       <h1 class="font-bold text-gray-900 text-3xl tracking-tight">
