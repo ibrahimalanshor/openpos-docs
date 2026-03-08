@@ -92,7 +92,7 @@ const prices = [
       >
         Aplikasi Kasir Digital Untuk Kelola Toko Jadi Lebih Mudah
       </h1>
-      <p class="text-gray-500 text-lg">
+      <p class="text-gray-500 text-lg leading-relaxed">
         Mengelola barang, stok, penjualan, shift, uang kas, laporan, hingga
         hitung laba toko secara otomatis dan lengkap.
       </p>
@@ -189,13 +189,31 @@ const prices = [
     </div>
   </Section>
 
-  <section>
-    <h2>Tertarik Untuk Mencoba?</h2>
-    <p>
-      Hubungi kami segera untuk mencoba aplikasi kasir kami, atau jadwalkan demo
-      aplikasi gratis.
-    </p>
-    <a href="/try">Coba Sekarang</a>
-    <a href="/schedule">Jadwalkan Demo</a>
+  <section class="bg-blue-600 text-white py-24 text-center">
+    <Container class="space-y-8">
+      <div class="space-y-4">
+        <h2 class="font-bold text-3xl tracking-tight">
+          Tertarik Untuk Mencoba?
+        </h2>
+        <p class="text-lg text-blue-100 leading-relaxed max-w-lg mx-auto">
+          Hubungi kami segera untuk mencoba aplikasi kasir kami, atau jadwalkan
+          demo aplikasi gratis.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-2 md:flex md:justify-center">
+        <Button
+          tag="a"
+          color="light"
+          class="h-11 px-8 rounded-lg border-0"
+          href="/try">Coba Sekarang</Button
+        >
+        <Button
+          tag="a"
+          color="transparent"
+          class="h-11 px-8 rounded-lg border-0 hover:bg-white hover:text-gray-900"
+          href="/try">Jadwalkan Demo</Button
+        >
+      </div>
+    </Container>
   </section>
 </Default>

@@ -5,7 +5,7 @@ interface Props {
   tag?: 'button' | 'a';
   class?: string;
   icon?: string;
-  color?: 'primary' | 'light';
+  color?: 'primary' | 'light' | 'transparent';
   [key: string]: any;
 }
 
@@ -20,6 +20,7 @@ const {
 const colorClassList = {
   primary: 'bg-blue-600 text-white hover:bg-blue-700',
   light: 'bg-white text-gray-900 border border-gray-200 hover:bg-gray-100',
+  transparent: 'bg-transparent',
 }[color];
 ---
 
