@@ -1,18 +1,33 @@
 ---
 import { Image } from 'astro:assets';
 import Logo from '../../assets/logo.png';
+import Container from '../base/Container.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
-<footer>
-  <Image src={Logo} alt="OpenPos - Logo" />
-  <a href="/">OpenPos</a>
-  <ul>
+<Container
+  tag="footer"
+  class="py-10 flex flex-col items-center text-center gap-6 relative lg:flex-row lg:justify-between"
+>
+  <div class="flex items-center gap-2">
+    <Image src={Logo} alt="OpenPos - Logo" class="w-8" />
+    <a href="/" class="font-bold text-gray-900 text-lg">OpenPos</a>
+  </div>
+  <ul
+    class="flex flex-col items-center gap-2 md:flex-row md:gap-4 lg:absolute lg:left-1/2 lg:-translate-x-1/2"
+  >
     <li>
-      <a href="#features">+62 8224 3213</a>
+      <a
+        class="flex items-center gap-2 text-gray-500 hover:text-gray-900"
+        href="#features"><Icon name="tabler:phone" />+62 8224 3213</a
+      >
     </li>
     <li>
-      <a href="#pricing">openpos@narakode.id</a>
+      <a
+        class="flex items-center gap-2 text-gray-500 hover:text-gray-900"
+        href="#features"><Icon name="tabler:mail" />openpos@narakode.id</a
+      >
     </li>
   </ul>
-  <p>&copy; 2026 OpenPos All rights reserved.</p>
-</footer>
+  <p class="text-gray-500 text-sm">&copy; 2026 OpenPos All rights reserved.</p>
+</Container>
