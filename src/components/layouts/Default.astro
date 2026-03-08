@@ -11,16 +11,73 @@ import '@fontsource/dm-sans/900.css';
 import '../../style.css';
 import Navbar from '../partials/Navbar.astro';
 import Footer from '../partials/Footer.astro';
+import { SEO } from 'astro-seo';
+
+const { title, titleAppend = false, description, image, seo } = Astro.props;
+
+const meta = {
+  title: title
+    ? titleAppend
+      ? `${title} | OpenPos`
+      : title
+    : 'Aplikasi Kasir Digital Untuk Kelola Toko Jadi Lebih Mudah | OpenPos',
+  description:
+    description ??
+    'Aplikasi kasir digital untuk membantu mengelola toko menjadi lebih mudah dengan fitur stok, penjualan, shift, laporan hingga perhitungan HPP dan laba.',
+  image: new URL(image ?? '/banner.png', Astro.url.origin).href,
+};
 ---
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <SEO
+      charset="utf-8"
+      title={meta.title}
+      description={meta.description}
+      openGraph={{
+        basic: {
+          title: meta.title,
+          type: 'website',
+          image: meta.image,
+        },
+        optional: {
+          description: meta.description,
+        },
+      }}
+      twitter={{
+        card: 'summary_large_image',
+        creator: 'narakode',
+        title: meta.title,
+        image: meta.image,
+        description: meta.description,
+      }}
+      {...seo}
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <meta
+      name="google-site-verification"
+      content="uQGWsE1AvnXlD-gvyTzOv7sMh7vZH7pSuZctArIi3Ws"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body>
     <Navbar />
