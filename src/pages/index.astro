@@ -4,6 +4,8 @@ import Hero from '../assets/hero.jpg';
 import { Image } from 'astro:assets';
 import Container from '../components/base/Container.astro';
 import Button from '../components/base/Button.astro';
+import Section from '../components/base/Section.astro';
+import Card from '../components/base/Card.astro';
 import { Icon } from 'astro-icon/components';
 
 const features = [
@@ -49,6 +51,7 @@ const prices = [
     name: 'Basic',
     description: 'Semua fitur lengkap',
     price: 'Rp 59.000',
+    featured: true,
     features: [
       'Semua Fitur',
       'Gratis Domain',
@@ -59,7 +62,8 @@ const prices = [
   {
     name: 'Custom',
     description: 'Semua fitur + custom fitur',
-    price: 'Custom',
+    price: null,
+    featured: false,
     features: [
       'Semua Fitur',
       'Gratis Domain',
@@ -113,58 +117,77 @@ const prices = [
     </div>
   </Container>
 
-  <section class="bg-gray-50">
-    <Container class="py-20 space-y-12">
-      <div class="text-center space-y-4">
-        <h1 class="font-bold text-gray-900 text-3xl tracking-tight">
-          Fitur Pengelolaan Toko Lengkap
-        </h1>
-        <p class="text-gray-500">
-          Dapat mempermudah operasional toko dan meningkatkan keakuratan data
-          stok, laporan, dst.
-        </p>
-      </div>
-      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {
-          features.map((feature) => (
-            <article class="bg-white rounded-xl border border-gray-200 p-6 space-y-4">
-              <div class="bg-blue-100 text-blue-900 w-10 h-10 rounded-lg flex items-center justify-center">
-                <Icon name={feature.icon} class="size-5" />
-              </div>
-              <div class="space-y-2">
-                <h2 class="font-semibold text-gray-900 text-lg">
-                  {feature.name}
-                </h2>
-                <p class="text-gray-500">{feature.description}</p>
-              </div>
-            </article>
-          ))
-        }
-      </div>
-    </Container>
-  </section>
-
-  <section>
-    <h1>Daftar Harga</h1>
-    <p>Harga murah dan fleksibel untuk apliakasi kasir lengkap</p>
-    <div>
+  <Section
+    color="dark"
+    title="Fitur Pengelolaan Toko Lengkap"
+    subtitle="Dapat mempermudah operasional toko dan meningkatkan keakuratan data
+          stok, laporan, dst."
+  >
+    <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
       {
-        prices.map((price) => (
-          <article>
-            <h2>{price.name}</h2>
-            <p>{price.description}</p>
-            <p>{price.price}</p>
-            <ul>
-              {price.features.map((feature) => (
-                <li>{feature}</li>
-              ))}
-            </ul>
-            <a href="/checkout">Coba Sekarang</a>
-          </article>
+        features.map((feature) => (
+          <Card>
+            <div class="bg-blue-100 text-blue-900 w-10 h-10 rounded-lg flex items-center justify-center">
+              <Icon name={feature.icon} class="size-5" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="font-semibold text-gray-900 text-lg">
+                {feature.name}
+              </h2>
+              <p class="text-gray-500">{feature.description}</p>
+            </div>
+          </Card>
         ))
       }
     </div>
-  </section>
+  </Section>
+
+  <Section
+    title="Daftar Harga"
+    subtitle="Harga murah dan fleksibel untuk aplikasi kasir lengkap."
+  >
+    <div class="grid gap-4 md:grid-cols-2 lg:flex lg:justify-center">
+      {
+        prices.map((price) => (
+          <Card
+            customColor={price.featured}
+            class={`${price.featured ? 'border border-blue-600 bg-blue-600/5 shadow-lg shadow-blue-600/10 ring-1 ring-blue-600/20' : ''} flex flex-col justify-between lg:min-w-80`}
+          >
+            <div class="space-y-4">
+              <div class="space-y-1">
+                <h2 class="font-semibold text-gray-900 text-xl">
+                  {price.name}
+                </h2>
+                <p class="text-gray-500">{price.description}</p>
+              </div>
+              <p class="font-bold text-3xl text-gray-900">
+                {price.price ?? 'Rp Custom'}
+                {price.price && (
+                  <span class="text-sm font-normal text-gray-500">/bulan</span>
+                )}
+              </p>
+              <ul class="space-y-2">
+                {price.features.map((feature) => (
+                  <li class="flex items-center gap-2">
+                    <Icon name="tabler:check" class="text-blue-600" />
+                    <span class="text-gray-700">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <Button
+              tag="a"
+              class="h-10 w-full rounded-lg"
+              href="/checkout"
+              color={price.featured ? 'primary' : 'light'}
+            >
+              Coba Sekarang
+            </Button>
+          </Card>
+        ))
+      }
+    </div>
+  </Section>
 
   <section>
     <h2>Tertarik Untuk Mencoba?</h2>

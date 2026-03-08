@@ -1,0 +1,9 @@
+---
+const { customColor = false, class: classList = '' } = Astro.props;
+---
+
+<article
+  class={`rounded-xl ${customColor ? '' : 'bg-white border border-gray-200'} p-6 space-y-4 ${classList}`}
+>
+  <slot />
+</article>
