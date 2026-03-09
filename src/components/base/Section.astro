@@ -1,7 +1,15 @@
 ---
 import Container from './Container.astro';
+import { Icon } from 'astro-icon/components';
 
-const { title, subtitle, color = 'light', id = '' } = Astro.props;
+const {
+  title,
+  subtitle,
+  color = 'light',
+  id = '',
+  lead,
+  leadIcon,
+} = Astro.props;
 
 const colorClassList = color === 'dark' ? 'bg-gray-50' : '';
 ---
@@ -9,6 +17,14 @@ const colorClassList = color === 'dark' ? 'bg-gray-50' : '';
 <section class={`${colorClassList}`} id={id}>
   <Container class="py-20 space-y-12">
     <div class="text-center space-y-4">
+      {
+        lead && (
+          <p class="text-blue-600 tracking-wide text-sm uppercase flex items-center gap-2 justify-center">
+            {leadIcon && <Icon name={leadIcon} />}
+            {lead}
+          </p>
+        )
+      }
       <h1 class="font-bold text-gray-900 text-3xl tracking-tight">
         {title}
       </h1>
