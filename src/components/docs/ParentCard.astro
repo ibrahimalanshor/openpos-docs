@@ -1,0 +1,35 @@
+---
+import Card from '../base/Card.astro';
+import IconBadge from '../base/IconBadge.astro';
+import { getCollection } from 'astro:content';
+import { Icon } from 'astro-icon/components';
+
+const { doc } = Astro.props;
+
+const children = await getCollection(
+  'docs',
+  (child) => child.data.parent?.id === doc.id,
+);
+---
+
+<Card>
+  <IconBadge icon={doc.data.icon} />
+  <div class="space-y-2">
+    <h2 class="font-semibold text-gray-900 text-lg">
+      {doc.data.title}
+    </h2>
+    <p class="text-gray-500">{doc.data.summary}</p>
+  </div>
+  <ul>
+    {
+      children.map((child) => (
+        <li>
+          <a class="text-blue-600 flex items-center gap-2">
+            <Icon name="tabler:help" />
+            {child.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Card>

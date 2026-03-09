@@ -1,12 +1,11 @@
 ---
 import Default from '../../components/layouts/Default.astro';
 import Container from '../../components/base/Container.astro';
-import Card from '../../components/base/Card.astro';
 import Section from '../../components/base/Section.astro';
-import IconBadge from '../../components/base/IconBadge.astro';
 import { getCollection } from 'astro:content';
+import ParentCard from '../../components/docs/ParentCard.astro';
 
-const docs = await getCollection('docs');
+const docs = await getCollection('docs', (doc) => !doc.data.parent);
 ---
 
 <Default title="Panduang Menggunakan Aplikasi Kasir" titleAppend>
@@ -18,19 +17,7 @@ const docs = await getCollection('docs');
       leadIcon="tabler:book"
     >
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {
-          docs.map((doc) => (
-            <Card>
-              <IconBadge icon={doc.data.icon} />
-              <div class="space-y-2">
-                <h2 class="font-semibold text-gray-900 text-lg">
-                  {doc.data.title}
-                </h2>
-                <p class="text-gray-500">{doc.data.summary}</p>
-              </div>
-            </Card>
-          ))
-        }
+        {docs.map((doc) => <ParentCard doc={doc} />)}
       </div>
     </Section>
   </Container>
