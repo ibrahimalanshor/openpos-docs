@@ -7,6 +7,7 @@ import Button from '../components/base/Button.astro';
 import Section from '../components/base/Section.astro';
 import Card from '../components/base/Card.astro';
 import { Icon } from 'astro-icon/components';
+import IconBadge from '../components/base/IconBadge.astro';
 
 const features = [
   {
@@ -134,9 +135,7 @@ const prices = [
         {
           features.map((feature) => (
             <Card>
-              <div class="bg-blue-100 text-blue-900 w-10 h-10 rounded-lg flex items-center justify-center">
-                <Icon name={feature.icon} class="size-5" />
-              </div>
+              <IconBadge icon={feature.icon} />
               <div class="space-y-2">
                 <h2 class="font-semibold text-gray-900 text-lg">
                   {feature.name}
