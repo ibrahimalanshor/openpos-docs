@@ -1,5 +1,10 @@
 ---
-import { CollectionEntry, getCollection, render } from 'astro:content';
+import {
+  CollectionEntry,
+  getCollection,
+  getEntry,
+  render,
+} from 'astro:content';
 import Default from '../../components/layouts/Default.astro';
 import Container from '../../components/base/Container.astro';
 import { Icon } from 'astro-icon/components';
@@ -18,13 +23,24 @@ export async function getStaticPaths() {
 
 const { doc } = Astro.props;
 const { Content } = await render(doc);
+const parent = doc.data.parent?.id ? await getEntry(doc.data.parent) : null;
 ---
 
 <Default title={doc.data.title} titleAppend>
   <Container class="py-16 space-y-6">
-    <nav class="flex items-center gap-2 max-w-prose mx-auto">
+    <nav class="flex items-center gap-2 max-w-prose mx-auto flex-wrap">
       <a href="/panduan" class="text-gray-500">Panduan</a>
       <Icon name="tabler:chevron-right" class="text-gray-500" />
+      {
+        parent && (
+          <>
+            <a href={`/panduan/${parent.id}`} class="text-gray-500">
+              {parent.data.title}
+            </a>
+            <Icon name="tabler:chevron-right" class="text-gray-500" />
+          </>
+        )
+      }
       <span class="text-gray-700">{doc.data.title}</span>
     </nav>
 

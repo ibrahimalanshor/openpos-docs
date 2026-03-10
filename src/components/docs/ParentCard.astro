@@ -27,7 +27,10 @@ children.sort((a, b) => a.data.order - b.data.order);
     {
       children.map((child) => (
         <li>
-          <a class="text-blue-600 flex items-center gap-2">
+          <a
+            href={`/panduan/${child.id}`}
+            class="text-blue-600 flex items-center gap-2 hover:underline"
+          >
             <Icon name="tabler:help" />
             {child.data.title}
           </a>
