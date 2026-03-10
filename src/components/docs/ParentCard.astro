@@ -10,6 +10,8 @@ const children = await getCollection(
   'docs',
   (child) => child.data.parent?.id === doc.id,
 );
+
+children.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Card>
