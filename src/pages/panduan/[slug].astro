@@ -20,20 +20,16 @@ const { doc } = Astro.props;
 const { Content } = await render(doc);
 ---
 
-<Default>
-  <Container class="py-16">
-    <nav>
-      <a href="/docs">Panduan</a>
-      <Icon name="tabler:chevron-right" />
-      <span>{doc.data.title}</span>
+<Default title={doc.data.title} titleAppend>
+  <Container class="py-16 space-y-6">
+    <nav class="flex items-center gap-2 max-w-prose mx-auto">
+      <a href="/panduan" class="text-gray-500">Panduan</a>
+      <Icon name="tabler:chevron-right" class="text-gray-500" />
+      <span class="text-gray-700">{doc.data.title}</span>
     </nav>
 
-    <article>
-      {doc.data.icon}
-
+    <article class="prose mx-auto">
       <h1>{doc.data.title}</h1>
-
-      <p>{doc.data.summary}</p>
 
       <Content />
     </article>
