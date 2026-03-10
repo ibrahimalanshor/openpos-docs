@@ -18,7 +18,8 @@ children.sort((a, b) => a.data.order - b.data.order);
   <IconBadge icon={doc.data.icon} />
   <div class="space-y-2">
     <h2 class="font-semibold text-gray-900 text-lg">
-      {doc.data.title}
+      <a href={`/panduan/${doc.id}`} class="hover:underline">{doc.data.title}</a
+      >
     </h2>
     <p class="text-gray-500">{doc.data.summary}</p>
   </div>

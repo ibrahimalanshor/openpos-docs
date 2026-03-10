@@ -1,0 +1,41 @@
+---
+import { CollectionEntry, getCollection, render } from 'astro:content';
+import Default from '../../components/layouts/Default.astro';
+import Container from '../../components/base/Container.astro';
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  doc: CollectionEntry<'docs'>;
+}
+
+export async function getStaticPaths() {
+  const docs = await getCollection('docs');
+  return docs.map((doc) => ({
+    params: { slug: doc.id },
+    props: { doc },
+  }));
+}
+
+const { doc } = Astro.props;
+const { Content } = await render(doc);
+---
+
+<Default>
+  <Container class="py-16">
+    <nav>
+      <a href="/docs">Panduan</a>
+      <Icon name="tabler:chevron-right" />
+      <span>{doc.data.title}</span>
+    </nav>
+
+    <article>
+      {doc.data.icon}
+
+      <h1>{doc.data.title}</h1>
+
+      <p>{doc.data.summary}</p>
+
+      <Content />
+    </article>
+  </Container>
+</Default>
