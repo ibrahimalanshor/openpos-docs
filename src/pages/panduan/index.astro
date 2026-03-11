@@ -10,7 +10,11 @@ const docs = await getCollection('docs', (doc) => !doc.data.parent);
 docs.sort((a, b) => a.data.order - b.data.order);
 ---
 
-<Default title="Panduang Menggunakan Aplikasi Kasir" titleAppend>
+<Default
+  title="Panduang Menggunakan Aplikasi Kasir"
+  description="Tutorial menggunakan aplikasi OpenPos, cara menginstal, menggunakan fitur, dsb."
+  titleAppend
+>
   <Container>
     <Section
       title="Panduan Menggunakan Aplikasi Kasir OpenPos"
