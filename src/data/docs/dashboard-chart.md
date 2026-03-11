@@ -1,55 +1,25 @@
 ---
 title: Cara Melihat Grafik Toko
 slug: cara-melihat-grafik-toko
-summary: Thermal Printer adalah perangkat untuk mencetak struk penjualan.
+summary: Grafik toko adalah informasi statistik toko yang disajikan dalam bentuk visual.
 order: 1
 parent: dashboard
 ---
 
-Thermal printer adalah perangkat untuk mencetak struk penjualan pada aplikasi OpenPos.
+Grafik toko adalah informasi statistik toko yang disajikan dalam bentuk visual.
 
-Aplikasi OpenPos dapat menggunakan semua jenis thermal printer dari merek apapun, selama printer tersebut dapat digunakan di laptop/komputer.
+Grafik toko hanya bisa dilihat oleh pengguna Admin dan Manager.
 
-Jika Anda menggunakan handphone/tablet maka cetak struk penjualan tidak bisa dilakukan karena thermal printer tidak bisa terhubung ke handphone/tablet.
+Ada dua grafik yang ditampilkan di dashboard:
 
-Jika Anda tertarik, Anda bisa membeli thermal printer dari toko kami yang sudah kami jamin lancar untuk digunakan di aplikasi OpenPos. [Cek daftar thermal printer yang kami sediakan](/hardware/thermal-printer).
+## 1. Grafik Penjualan Mingguan
 
-Setelah memiliki perangkat thermal printer, hubungkan ke laptop/komputer dengan panduan berikut:
+Menampilkan data total pemasukan penjualan per hari dalam satu minggu.
 
-## 1. Instal Driver
+Bermanfaat untuk melihat alur hari dengan penjualan paling laris dan paling tidak laris dalam satu minggu.
 
-Thermal printer umumnya membutuhkan driver yang harus diinstal ke laptop/komputer agar bisa digunakan.
+## 2. Grafik Barang Terlaris Mingguan
 
-Baca artikel [cara menginstal driver thermal printer](/blog/cara-menginstal-driver-thermal-printer) untuk panduan instalasi driver semua merek thermal printer.
+Menampilkan daftar barang diurutkan berdasarkan yang paling banyak terjual dalam satu minggu.
 
-## 2. Hubungkan Printer
-
-Thermal printer umumnya dihubungkan dengan USB atau Wi-Fi:
-
-### 1. Dengan USB
-
-1. Hubungkan kabel USB dari thermal printer ke laptop/komputer.
-2. Thermal printer siap digunakan.
-
-### 2. Dengan Wi-Fi
-
-1. Hubungkan thermal printer ke wi-fi yang ada.
-2. Hubungkan laptop/komputer ke wi-fi yang sama dengan thermal printer.
-3. Thermal printer siap digunakan.
-
-## 3. Instal Aplikasi Printer Connector
-
-Aplikasi printer connector digunakan untuk menghubungkan aplikasi OpenPos ke thermal printer.
-
-Download aplikasi printer connector di link berikut:
-
-- [Printer Connector untuk windows](/download)
-- [Printer Connector untuk linux](/download)
-- [Printer Connector untuk macos](/download)
-
-Setelah di-download, ikuti langkah-langkah berikut.
-
-1. Instal aplikasi printer connector.
-2. Setelah terinstal, akan muncul icon printer di pojok layar, klik icon tersebut.
-3. Pilih thermal printer yang terhubung ke laptop/komputer Anda dengan menekan tombol `activate`.
-4. Thermal printer siap untuk digunakan.
+Bermanfaat untuk mengetahui barang apa saja yang paling laris dalam satu minggu.
