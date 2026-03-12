@@ -6,33 +6,35 @@ order: 2
 parent: mengelola-barang
 ---
 
-Statistik toko adalah kumpulan data informasi seputar toko dalam bentuk angka.
+Pertama, buka halaman daftar barang dengan mengklik menu `Barang` di menu samping kiri.
 
-Statistik toko dapat dilihat di menu dashboard.
+Setelah dibuka, klik tombol `Tambah Barang` di atas tabel daftar barang.
 
-Setiap angka dalam statistik toko ada label atau nama statistiknya, berikut daftarnya:
+Setelah diklik akan muncul _popup_ yang menampilkan form detail barang. Masukkan detail barang yang ingin ditambahkan.
 
-## Admin & Manager
+Setelah lengkap, klik tombol `Simpan` di bawah form.
 
-1. **Total Transaksi**, jumlah penjualan yang dibuat semua kasir pada hari ini.
-2. **Total Penjualan**, total pendapatan dari penjualan semua kasir pada hari ini.
-3. **Barang Terjual**, total barang yang terjual hari ini.
-4. **Barang Hampir Habis**, total barang yang stoknya hampir habis.
+Jika berhasil disimpan, maka _popup_ akan hilang dan muncul notifikasi berhasil disimpan.
 
-## Gudang
+Jika gagal, akan muncul pesan kenapa gagal, berikut beberapa di antaranya:
 
-1. **Stok Terjual**, jumlah stok barang yang terjual oleh semua kasir pada hari ini.
-2. **Stok Tersedia**, total barang yang stoknya masih ada dan melebihi minimal stok.
-3. **Stok Hampir Habis**, total barang yang stoknya hampir habis.
-4. **Stok Habis**, total barang yang stoknya sudah habis.
+1. Nama barang sudah digunakan.
+2. Barcode tidak valid.
+3. Ada kotak isian yang belum diisi.
+4. dll.
 
-## Kasir
+## Mengedit Barang
 
-1. **Total Transaksi**, jumlah penjualan yang dibuat kasir sendiri pada hari ini.
-2. **Total Penjualan**, total pendapatan dari penjualan kasir sendiri pada hari ini.
-3. **Barang Terjual**, total barang yang terjual oleh kasir sendiri hari ini.
-4. **Saldo Kas**, total uang yang ada di kas pada shift kasir yang aktif.
+Untuk mengedit barang, klik tombol pensil berwarna hijau pada barang yang ingin diedit.
 
----
+Setelah diklik akan muncul _popup_ yang menampilkan form detail barang. Masukkan detail barang yang ingin diubah.
 
-Lanjut, baca [cara melihat grafik toko](/panduan/cara-melihat-grafik-toko).
+Setelah lengkap, klik tombol `Simpan` di bawah form.
+
+Jika berhasil disimpan, maka _popup_ akan hilang dan muncul notifikasi berhasil disimpan.
+
+## Memasukkan Barcode Barang
+
+Pada form tambah barang dan edit barang, barcode bisa dimasukkan dengan diketik di keyboard atau dengan discan dengan alat barcode scanner.
+
+Pastikan kolom barcode sudah diklik sebelum discan.
