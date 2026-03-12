@@ -30,3 +30,7 @@ Setelah diklik akan muncul _pop up_ yang menampilkan detail barang seperti:
 - Harga jual
 - HPP
 - dll
+
+---
+
+Lanjut, baca [cara menambahkan dan mengedit barang](/panduan/cara-menambah-dan-mengedit-barang).

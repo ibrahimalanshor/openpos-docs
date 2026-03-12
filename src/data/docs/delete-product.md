@@ -6,33 +6,14 @@ order: 3
 parent: mengelola-barang
 ---
 
-Statistik toko adalah kumpulan data informasi seputar toko dalam bentuk angka.
+Pertama, buka halaman daftar barang dengan mengklik menu `Barang` di menu samping kiri.
 
-Statistik toko dapat dilihat di menu dashboard.
+Setelah dibuka, pilih barang yang ingin dihapus pada tabel barang.
 
-Setiap angka dalam statistik toko ada label atau nama statistiknya, berikut daftarnya:
+Setelah diklik akan muncul _popup_ konfirmasi hapus, klik tombol `Konfirmasi`.
 
-## Admin & Manager
-
-1. **Total Transaksi**, jumlah penjualan yang dibuat semua kasir pada hari ini.
-2. **Total Penjualan**, total pendapatan dari penjualan semua kasir pada hari ini.
-3. **Barang Terjual**, total barang yang terjual hari ini.
-4. **Barang Hampir Habis**, total barang yang stoknya hampir habis.
-
-## Gudang
-
-1. **Stok Terjual**, jumlah stok barang yang terjual oleh semua kasir pada hari ini.
-2. **Stok Tersedia**, total barang yang stoknya masih ada dan melebihi minimal stok.
-3. **Stok Hampir Habis**, total barang yang stoknya hampir habis.
-4. **Stok Habis**, total barang yang stoknya sudah habis.
-
-## Kasir
-
-1. **Total Transaksi**, jumlah penjualan yang dibuat kasir sendiri pada hari ini.
-2. **Total Penjualan**, total pendapatan dari penjualan kasir sendiri pada hari ini.
-3. **Barang Terjual**, total barang yang terjual oleh kasir sendiri hari ini.
-4. **Saldo Kas**, total uang yang ada di kas pada shift kasir yang aktif.
+Jika berhasil dihapus, maka _popup_ akan hilang dan muncul notifikasi berhasil dihapus.
 
 ---
 
-Lanjut, baca [cara melihat grafik toko](/panduan/cara-melihat-grafik-toko).
+Lanjut, baca [cara import dan export barang](/panduan/cara-import-dan-export-barang).

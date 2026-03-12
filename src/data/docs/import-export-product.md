@@ -35,4 +35,4 @@ Setiap angka dalam statistik toko ada label atau nama statistiknya, berikut daft
 
 ---
 
-Lanjut, baca [cara melihat grafik toko](/panduan/cara-melihat-grafik-toko).
+Lanjut, baca [cara import dan export barang](/panduan/cara-melihat-grafik-toko).

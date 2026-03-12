@@ -38,3 +38,7 @@ Jika berhasil disimpan, maka _popup_ akan hilang dan muncul notifikasi berhasil 
 Pada form tambah barang dan edit barang, barcode bisa dimasukkan dengan diketik di keyboard atau dengan discan dengan alat barcode scanner.
 
 Pastikan kolom barcode sudah diklik sebelum discan.
+
+---
+
+Lanjut, baca [cara menghapus barang](/panduan/cara-menghapus-barang).
