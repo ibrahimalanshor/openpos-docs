@@ -6,33 +6,42 @@ order: 4
 parent: mengelola-barang
 ---
 
-Statistik toko adalah kumpulan data informasi seputar toko dalam bentuk angka.
+Import dan export barang adalah fitur untuk memudahkan dalam mengelola data barang di aplikasi OpenPos.
 
-Statistik toko dapat dilihat di menu dashboard.
+## Cara Import Barang
 
-Setiap angka dalam statistik toko ada label atau nama statistiknya, berikut daftarnya:
+Import barang berfungsi untuk memasukkan banyak barang sekaligus ke aplikasi melalui sebuah file `.csv`.
 
-## Admin & Manager
+File `.csv` adalah file yang mirip excel/spreadsheet. File ini bisa dibuat dari file excel yang disimpan dengan format `.csv`.
 
-1. **Total Transaksi**, jumlah penjualan yang dibuat semua kasir pada hari ini.
-2. **Total Penjualan**, total pendapatan dari penjualan semua kasir pada hari ini.
-3. **Barang Terjual**, total barang yang terjual hari ini.
-4. **Barang Hampir Habis**, total barang yang stoknya hampir habis.
+Di dalam file `.csv` barang, baris bertama harus ada kolom-kolom berikut:
 
-## Gudang
+1. `name`, nama barang.
+2. `category`, kategori barang.
+3. `barcode`, barcode barang.
+4. `price`, harga jual barang.
+5. `purchase_price`, harga beli barang.
+6. `stock`, stok barang.
 
-1. **Stok Terjual**, jumlah stok barang yang terjual oleh semua kasir pada hari ini.
-2. **Stok Tersedia**, total barang yang stoknya masih ada dan melebihi minimal stok.
-3. **Stok Hampir Habis**, total barang yang stoknya hampir habis.
-4. **Stok Habis**, total barang yang stoknya sudah habis.
+Contoh isi file `.csv` barang:
 
-## Kasir
+```csv
+name,category,barcode,price,purchase_price,stock,min_stock
+"Beras Ramos 5kg","Sembako",899100100001,72000,65000,5,10
+```
 
-1. **Total Transaksi**, jumlah penjualan yang dibuat kasir sendiri pada hari ini.
-2. **Total Penjualan**, total pendapatan dari penjualan kasir sendiri pada hari ini.
-3. **Barang Terjual**, total barang yang terjual oleh kasir sendiri hari ini.
-4. **Saldo Kas**, total uang yang ada di kas pada shift kasir yang aktif.
+Setelah file `.csv` barang sudah siap, buka halaman `Barang` di menu samping kiri.
 
----
+Klik tombol `Import Barang`, maka akan muncul _popup_ untuk mengupload file `.csv` barang.
 
-Lanjut, baca [cara import dan export barang](/panduan/cara-melihat-grafik-toko).
+Masukkan file `.csv` barang lalau tekan tombol `Import`.
+
+Tunggu hingga selesai. Setelah selesai, akan muncul notifikasi berhasil import, dan barang bisa dilihat di daftar barang.
+
+## Cara Export Barang
+
+Export barang berfungsi untuk membuat sebuah file `.csv` berisi daftar barang dalam aplikasi.
+
+Caranya masih di halaman `Barang`, klik tombol `Export Barang`, tunggu hinggal selesai.
+
+Setelah selesai, file `.csv` barang hasil export bisa disimpan ke komputer Anda.
