@@ -20,3 +20,7 @@ Pada detail barang, dapat dilihat.
 Jika stok barang lebih kecil dari minimal stok, maka akan muncul icon peringatan berwarna kuning.
 
 Jika stok barang habis, maka akan muncul icon peringatan berwarna merah.
+
+---
+
+Lanjut, [cara melihat pergerakan stok barang.](/panduan/cara-melihat-riwayat-stok-barang)
