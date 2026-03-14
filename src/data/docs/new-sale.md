@@ -6,22 +6,28 @@ order: 1
 parent: penjualan
 ---
 
-Pergerakan stok barang adalah fitur untuk melihat arus keluar masuk stok barang.
+Untuk membuat penjualan barang, buka menu `Penjualan` di menu samping kiri.
 
-Fitur ini bermanfaat untuk memantau kapan barang keluar, kapan barang masuk dan penyebabnya, misal karena dijual, restok ke supplier atau stok opname.
+Setlah menu dibuka klik tombol `Tambah Penjualan`. Tombol ini hanya muncul di pengguna kasir. Tombol ini hanya bisa diklik jika kasir sudah memulai shift.
 
-Untuk melihat pergerakan stok barang, buka menu daftar barang. Lalu pilih barang yang ingin dilihat.
+Untuk memulai shift, baca [cara memulai shift kasir.](/panduan/cara-memulai-shift-kasir)
 
-Setelah muncul _popup_ detail barang, di bagian bawah terdapat tabel pergerakan stok barang.
+Setelah halaman `Tambah Penjualan` terbuka, klik kotak input pencarian barang.
 
-Ada beberapa informasi yang ditampilkan:
+Ketikkan nama barang yang ingin dijual lalu diklik barangny, atau scan barcode barang. Setelah itu otomatis barang masuk ke daftar barang penjualan di bawahnya.
 
-1. Tanggal dan waktu pergerakan stok.
-2. Deksripsi pergerakan stok (dijual, restok, stok opname, import).
-3. Berapa stok barang yang masuk.
-4. Berapa stok barang yang keluar.
-5. Jumlah stok barang setelah terjadi pergerakan stok.
+Jika ingin menambahkan jumlah barang yang dibeli, bisa diketik ulang atau scan barcode ulang.
+
+Atau bisa diubah langsung di kotak jumlah barang.
+
+Setelah semua barang ditambahkan, pilih metode pembayaran, dan masukkan jumlah pembayarannya.
+
+Setelah selesai semua klik simpan.
+
+Setelah tersimpan, akan muncul _popup_ berhasil simpan, klik `Cetak Struk` untuk mencetak struk penjualan ke printer.
+
+Perjualan berhasil disimpan.
 
 ---
 
-Lanjut, [cara menampilkan barang per status stok.](/panduan/cara-menampilkan-barang-per-status-stok)
+Lanjut, [cara menambahkan diskon pada barang dan penjualan.](/panduan/cara-menambahkan-diskon-penjualan)
