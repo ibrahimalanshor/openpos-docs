@@ -20,4 +20,4 @@ Setelah dipilih daftar barang yang ditampilkan akan berdasarkan status stok yang
 
 ---
 
-Lanjut, [cara mengatur stok minimum pada barang](/panduan/cara-mengatur-stok-minimum-barang)
+Lanjut, [cara mengatur stok minimum pada barang.](/panduan/cara-mengatur-stok-minimum-barang)
