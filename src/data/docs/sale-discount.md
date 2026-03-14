@@ -6,22 +6,35 @@ order: 2
 parent: penjualan
 ---
 
-Pergerakan stok barang adalah fitur untuk melihat arus keluar masuk stok barang.
+Diskon bisa ditambahkan ketika membuat penjualan. Ada dua jenis diskon:
 
-Fitur ini bermanfaat untuk memantau kapan barang keluar, kapan barang masuk dan penyebabnya, misal karena dijual, restok ke supplier atau stok opname.
+1. Diskon per barang
+2. Diskon total penjualan
 
-Untuk melihat pergerakan stok barang, buka menu daftar barang. Lalu pilih barang yang ingin dilihat.
+Berkut panduannya masing-masing:
 
-Setelah muncul _popup_ detail barang, di bagian bawah terdapat tabel pergerakan stok barang.
+## Menambahkan Diskon Per Barang
 
-Ada beberapa informasi yang ditampilkan:
+Untuk menambahkan diskon per barang, masukkan barangnya terlebih dahulu ke barang yang akan dijual.
 
-1. Tanggal dan waktu pergerakan stok.
-2. Deksripsi pergerakan stok (dijual, restok, stok opname, import).
-3. Berapa stok barang yang masuk.
-4. Berapa stok barang yang keluar.
-5. Jumlah stok barang setelah terjadi pergerakan stok.
+Setelah dimasukkan tekan tombol `Diskon` di barang yang ingin diberi diskon.
 
----
+Pilih jenis diskon, bisa persen (%) atau angka bulat.
 
-Lanjut, [cara menampilkan barang per status stok.](/panduan/cara-menampilkan-barang-per-status-stok)
+Masukkan nilai diskonnya.
+
+Secara otomatis harga total per barang akan berkurang sesuai nilai diskon.
+
+Untuk menghapus diskon klik ikon silang di diskon barang.
+
+## Menambahkan Diskon Total Penjualan
+
+Untuk menambahkan diskon total penjualan, klik tombol `Diskon` di atas total harga penjualan.
+
+Pilih jenis diskon, bisa persen (%) atau angka bulat.
+
+Masukkan nilai diskonnya.
+
+Secara otomatis harga total penjualan akan berkurang sesuai nilai diskon.
+
+Untuk menghapus diskon klik ikon silang di diskon.

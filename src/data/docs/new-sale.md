@@ -26,7 +26,7 @@ Setelah selesai semua klik simpan.
 
 Setelah tersimpan, akan muncul _popup_ berhasil simpan, klik `Cetak Struk` untuk mencetak struk penjualan ke printer.
 
-Perjualan berhasil disimpan.
+Perjualan berhasil disimpan. cek [cara melihat stok barang](/panduan/cara-melihat-stok-barang) untuk melihat stok barang yang seharusnya berkurang.
 
 ---
 
