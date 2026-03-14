@@ -6,22 +6,23 @@ order: 3
 parent: penjualan
 ---
 
-Pergerakan stok barang adalah fitur untuk melihat arus keluar masuk stok barang.
+Untuk menambahkan pembayaran pada penjualan barang, ada dua yang harus dilakukan.
 
-Fitur ini bermanfaat untuk memantau kapan barang keluar, kapan barang masuk dan penyebabnya, misal karena dijual, restok ke supplier atau stok opname.
+1. Memilih metode pembayaran
+2. Memasukkan jumlah pembayaran
 
-Untuk melihat pergerakan stok barang, buka menu daftar barang. Lalu pilih barang yang ingin dilihat.
+## 1. Memilih Metode Pembayaran
 
-Setelah muncul _popup_ detail barang, di bagian bawah terdapat tabel pergerakan stok barang.
+Pertama, pilih metode pembayaran, ada beberapa pilihan metode pembayaran:
 
-Ada beberapa informasi yang ditampilkan:
+1. Cash
+2. Bank Transfer
+3. QRIS
 
-1. Tanggal dan waktu pergerakan stok.
-2. Deksripsi pergerakan stok (dijual, restok, stok opname, import).
-3. Berapa stok barang yang masuk.
-4. Berapa stok barang yang keluar.
-5. Jumlah stok barang setelah terjadi pergerakan stok.
+## 2. Memasukkan Jumlah Pembayaran
+
+Kedua, masukkan jumlah pembayaran sesuai total harga penjualan.
 
 ---
 
-Lanjut, [cara menampilkan barang per status stok.](/panduan/cara-menampilkan-barang-per-status-stok)
+Lanjut, [cara mencetak struk penjualan.](/panduan/cara-mencetak-struk-penjualan)

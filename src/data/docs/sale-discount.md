@@ -38,3 +38,7 @@ Masukkan nilai diskonnya.
 Secara otomatis harga total penjualan akan berkurang sesuai nilai diskon.
 
 Untuk menghapus diskon klik ikon silang di diskon.
+
+---
+
+Lanjut, [cara mengatur metode pembayaran pada penjualan](/panduan/cara-menambahkan-pembayaran-penjualan)
