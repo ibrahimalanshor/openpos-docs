@@ -32,7 +32,7 @@ Untuk menghapus barang, klik tombol merah ikon sampah.
 
 Setelah semua barang restok sudah dimasukkan, klik tombol simpan.
 
-Restok berhasil dibuat, cek [cara melihat stok barang](/panduan/cara-melihat-stok-barang) untuk melihat stok barang.
+Restok berhasil dibuat, cek [cara melihat stok barang](/panduan/cara-melihat-stok-barang) untuk melihat stok barang yang seharusnya bertambah.
 
 ---
 
