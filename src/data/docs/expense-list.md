@@ -6,14 +6,12 @@ order: 2
 parent: pengeluaran-operasional
 ---
 
-Untuk memulai shift kasir, klik tombol `Mulai Shift` di pojok kanan atas.
+Untuk menampilkan pengeluaran operasional per hari, buka menu `Pengeluaran` di menu samping kiri.
 
-Setelah diklik akan muncul _popup_ untuk memulai shift, masukkan uang kas awal yang ada di laci kasir untuk menjadi saldo awal uang kas di aplikasi.
+Setelah terbuka, akan tampil daftar riwayat pengeluaran operasional.
 
-Klik simpan untuk memulai shift kasir.
+Untuk menampilkan pengeluaran operasional pada hari tertentu, klik input tanggal di kanan atas.
 
-Setelah tersimpan, di pojok kanan atas akan tampil uang kas di laci kasir yang menandakan shift telah berhasil dimulai.
+Pilih tanggal yang diinginkan.
 
----
-
-Lanjut, [cara mencatat pengeluaran uang kas.](/panduan/cara-mencatat-pengeluaran-uang-kas)
+Data pengeluaran akan menampilkan sesuai hari yang dipilih.
