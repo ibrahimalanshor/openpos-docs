@@ -1,9 +1,9 @@
 ---
-title: Cara Membuat Penjualan Barang
-slug: cara-membuat-penjualan-barang
-summary: Cara membuat penjualan barang ke pelanggan
-order: 1
-parent: penjualan
+title: Cara Mencatat Pengeluaran Uang Kas
+slug: cara-mencatat-pengeluaran-uang-kas
+summary: Cara mencatat pengeluaran uang kas kasir pada saat shift
+order: 2
+parent: shift-dan-uang-kas
 ---
 
 Untuk membuat penjualan barang, buka menu `Penjualan` di menu samping kiri.

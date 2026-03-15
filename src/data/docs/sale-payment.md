@@ -1,5 +1,5 @@
 ---
-title: Cara Menambahkan Pembayaran Penjualan barang
+title: Cara Menambahkan Pembayaran Penjualan Barang
 slug: cara-menambahkan-pembayaran-penjualan
 summary: Cara menambahkan pembayaran pada penjualan
 order: 3

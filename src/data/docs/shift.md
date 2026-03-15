@@ -25,7 +25,7 @@ Di aplikasi OpenPos, shift dan uang kas adalah fitur yang bisa digunakan oleh ka
 Berikut panduan menggunakan fitur shift dan uang kas kasir:
 
 1. [Cara memulai shift kasir](/panduan/cara-memulai-shift-kasir)
-2. [Cara membuat pengeluaran uang kas](/panduan/cara-membuat-pengeluaran-uang-kas)
+2. [Cara mencatat pengeluaran uang kas](/panduan/cara-mencatat-pengeluaran-uang-kas)
 3. [Cara menambahkan uang kas](/panduan/cara-menambahkan-uang-kas)
 4. [Cara melihat transaksi uang kas](/panduan/cara-melihat-transaksi-uang-kas)
 5. [Cara menutup shift kasir](/panduan/cara-menutup-shift-kasir)

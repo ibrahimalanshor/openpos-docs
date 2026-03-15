@@ -1,9 +1,9 @@
 ---
-title: Cara Membuat Penjualan Barang
-slug: cara-membuat-penjualan-barang
-summary: Cara membuat penjualan barang ke pelanggan
+title: Cara Memulai Shift Kasir
+slug: cara-memulai-shift-kasir
+summary: Cara memulai shift kasir agar bisa berjualan
 order: 1
-parent: penjualan
+parent: shift-dan-uang-kas
 ---
 
 Untuk membuat penjualan barang, buka menu `Penjualan` di menu samping kiri.

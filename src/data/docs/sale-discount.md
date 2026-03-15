@@ -1,5 +1,5 @@
 ---
-title: Cara Menambahkan Diskon Penjualan barang
+title: Cara Menambahkan Diskon Penjualan Barang
 slug: cara-menambahkan-diskon-penjualan
 summary: Cara menambahkan diskon pada barang dan penjualan
 order: 2
