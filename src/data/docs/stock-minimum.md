@@ -20,4 +20,4 @@ Setelah itu klik simpan. Stok minimum barang sudah berhasil diatur.
 
 ---
 
-Lanjut, [cara restok barang ke supplier.](/panduan/cara-membuat-restock-barang)
+Lanjut, [cara restok barang ke supplier](/panduan/cara-membuat-restock-barang).

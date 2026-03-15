@@ -25,4 +25,4 @@ Kedua, masukkan jumlah pembayaran sesuai total harga penjualan.
 
 ---
 
-Lanjut, [cara mencetak struk penjualan.](/panduan/cara-mencetak-struk-penjualan)
+Lanjut, [cara mencetak struk penjualan](/panduan/cara-mencetak-struk-penjualan).

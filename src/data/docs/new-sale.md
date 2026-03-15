@@ -10,7 +10,7 @@ Untuk membuat penjualan barang, buka menu `Penjualan` di menu samping kiri.
 
 Setlah menu dibuka klik tombol `Tambah Penjualan`. Tombol ini hanya muncul di pengguna kasir. Tombol ini hanya bisa diklik jika kasir sudah memulai shift.
 
-Untuk memulai shift, baca [cara memulai shift kasir.](/panduan/cara-memulai-shift-kasir)
+Untuk memulai shift, baca [cara memulai shift kasir](/panduan/cara-memulai-shift-kasir).
 
 Setelah halaman `Tambah Penjualan` terbuka, klik kotak input pencarian barang.
 
@@ -30,4 +30,4 @@ Perjualan berhasil disimpan. cek [cara melihat stok barang](/panduan/cara-meliha
 
 ---
 
-Lanjut, [cara menambahkan diskon pada barang dan penjualan.](/panduan/cara-menambahkan-diskon-penjualan)
+Lanjut, [cara menambahkan diskon pada barang dan penjualan](/panduan/cara-menambahkan-diskon-penjualan).

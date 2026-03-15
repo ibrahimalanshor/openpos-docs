@@ -16,4 +16,4 @@ Setelah tersimpan, di pojok kanan atas akan tampil uang kas di laci kasir yang m
 
 ---
 
-Lanjut, [cara mencatat pengeluaran uang kas.](/panduan/cara-mencatat-pengeluaran-uang-kas)
+Lanjut, [cara mencatat pengeluaran uang kas](/panduan/cara-mencatat-pengeluaran-uang-kas).

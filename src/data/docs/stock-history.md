@@ -24,4 +24,4 @@ Ada beberapa informasi yang ditampilkan:
 
 ---
 
-Lanjut, [cara menampilkan barang per status stok.](/panduan/cara-menampilkan-barang-per-status-stok)
+Lanjut, [cara menampilkan barang per status stok](/panduan/cara-menampilkan-barang-per-status-stok).

@@ -36,4 +36,4 @@ Restok berhasil dibuat, cek [cara melihat stok barang](/panduan/cara-melihat-sto
 
 ---
 
-Lanjut, [cara membuat stok opname.](/panduan/cara-membuat-stok-opname)
+Lanjut, [cara membuat stok opname](/panduan/cara-membuat-stok-opname).

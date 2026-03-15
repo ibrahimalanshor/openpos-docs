@@ -23,4 +23,4 @@ Jika stok barang habis, maka akan muncul icon peringatan berwarna merah.
 
 ---
 
-Lanjut, [cara melihat pergerakan stok barang.](/panduan/cara-melihat-riwayat-stok-barang)
+Lanjut, [cara melihat pergerakan stok barang](/panduan/cara-melihat-riwayat-stok-barang).

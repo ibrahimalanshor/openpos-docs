@@ -24,4 +24,4 @@ Setelah tersimpan uang kas di aplikasi akan berkurang.
 
 ---
 
-Lanjut, [cara menambahkan uang kas.](/panduan/cara-menambahkan-uang-kas)
+Lanjut, [cara menambahkan uang kas](/panduan/cara-menambahkan-uang-kas).
