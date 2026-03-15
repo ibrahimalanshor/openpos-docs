@@ -30,4 +30,4 @@ Perjualan berhasil disimpan. cek [cara melihat stok barang](/panduan/cara-meliha
 
 ---
 
-Lanjut, [cara menambahkan diskon pada barang dan penjualan.](/panduan/cara-menambahkan-diskon-penjualan)
+Lanjut, [cara menutup shift kasir](/panduan/cara-menutup-shift-kasir).

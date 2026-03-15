@@ -6,28 +6,33 @@ order: 3
 parent: shift-dan-uang-kas
 ---
 
-Untuk membuat penjualan barang, buka menu `Penjualan` di menu samping kiri.
+Untuk menambahkan uang kas di aplikasi OpenPos, ada dua cara.
 
-Setlah menu dibuka klik tombol `Tambah Penjualan`. Tombol ini hanya muncul di pengguna kasir. Tombol ini hanya bisa diklik jika kasir sudah memulai shift.
+1. Melalui Penjualan Tunai
+2. Melalui Transaksi Manual
 
-Untuk memulai shift, baca [cara memulai shift kasir.](/panduan/cara-memulai-shift-kasir)
+## 1. Melalui Penjualan Tunai
 
-Setelah halaman `Tambah Penjualan` terbuka, klik kotak input pencarian barang.
+Caranya adalah dengan membuat penjualan, pada saat memilih metode pembayaran, pilih `Cash`.
 
-Ketikkan nama barang yang ingin dijual lalu diklik barangny, atau scan barcode barang. Setelah itu otomatis barang masuk ke daftar barang penjualan di bawahnya.
+Setelah penjualan tersimpan, uang kas akan bertambah sesuai dengan total penjualan.
 
-Jika ingin menambahkan jumlah barang yang dibeli, bisa diketik ulang atau scan barcode ulang.
+Baca [cara membuat penjualan kasir](/panduan/cara-membuat-penjualan-barang).
 
-Atau bisa diubah langsung di kotak jumlah barang.
+## 2. Melalui Transaksi Manual
 
-Setelah semua barang ditambahkan, pilih metode pembayaran, dan masukkan jumlah pembayarannya.
+Transaksi manual adalah menambahkan uang kas secara manual, misal penambahan uang kembalian, dsb.
 
-Setelah selesai semua klik simpan.
+Caranya, klik angka uang kas di pojok kanan atas.
 
-Setelah tersimpan, akan muncul _popup_ berhasil simpan, klik `Cetak Struk` untuk mencetak struk penjualan ke printer.
+Lalu klik `+ Transaksi`.
 
-Perjualan berhasil disimpan. cek [cara melihat stok barang](/panduan/cara-melihat-stok-barang) untuk melihat stok barang yang seharusnya berkurang.
+Pilih jenis transaksi `Uang Masuk`, masukkan nominal uangnya, dan deskripsinya.
+
+Lalu klik simpan.
+
+Setelah tersimpan uang kas di aplikasi akan bertambah.
 
 ---
 
-Lanjut, [cara menambahkan diskon pada barang dan penjualan.](/panduan/cara-menambahkan-diskon-penjualan)
+Lanjut, [cara melihat transaksi uang kas](/panduan/cara-melihat-transaksi-uang-kas).
