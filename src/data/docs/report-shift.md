@@ -6,18 +6,24 @@ order: 4
 parent: laporan
 ---
 
-Pengeluaran operasional adalah fitur untuk mencatat pengeluaran operasional pada toko.
+Laporan shift kasir adalah laporan yang berisi riwayat shift kasir dalam periode tertentu (hari, bulan).
 
-Pengeluaran operasional digunakan untuk komponen perhitungan laba bersih.
+Untuk membuat laporan shift, klik `Menu Laporan > Laporan Shift` di menu samping kiri.
 
-Contoh pengeluaran operasional:
+Setelah terbuka, pilih periode laporan, tanggal/bulan.
 
-- Bayar listrik
-- Bayar wifi
-- Gaji karyawan
-- dll
+Lalu klik tombol `Tampilkan`.
 
-Berikut panduan mencatat pengeluaran operasional di aplikasi OpenPos:
+Akan muncul laporan shift sesuai periode yang dipilih.
 
-1. [Cara mencatat pengeluaran operasional](/panduan/cara-mencatat-pengeluaran-operasional)
-2. [Cara menampilkan pengeluaran operasional per hari](/panduan/cara-menampilkan-pengeluaran-operasional)
+Di bagian atas terdapat informasi total shift, total pemasukkan kas, total pengeluaran kas dan total selisih uang kas.
+
+Di bawahnya terdapat tabel daftar shift kasir pada periode yang dipilih.
+
+Untuk mendownload laporan menjadi file PDF, klik tombol `Download PDF`.
+
+Untuk mendownload laporan menjadi file Excel, klik tombol `Download Excel`.
+
+---
+
+Lanjut, [laporan pengeluaran](/panduan/laporan-pengeluaran).

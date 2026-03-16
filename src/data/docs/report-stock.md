@@ -20,6 +20,10 @@ Di bagian atas terdapat informasi total awal awal, total stok masuk, total stok 
 
 Di bawahnya terdapat tabel daftar stok per barang pada periode yang dipilih, lengkap dengan stok awal, total stok masuk dan total stok keluar.
 
+Untuk mendownload laporan menjadi file PDF, klik tombol `Download PDF`.
+
+Untuk mendownload laporan menjadi file Excel, klik tombol `Download Excel`.
+
 ---
 
 Lanjut, [laporan stok opname](/panduan/laporan-stok-opname).

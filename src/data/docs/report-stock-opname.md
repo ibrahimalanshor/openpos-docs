@@ -18,6 +18,10 @@ Akan muncul laporan stok opname sesuai periode yang dipilih.
 
 Laporan dalam bentuk tabel daftar stok opname pada periode yang dipilih.
 
+Untuk mendownload laporan menjadi file PDF, klik tombol `Download PDF`.
+
+Untuk mendownload laporan menjadi file Excel, klik tombol `Download Excel`.
+
 ---
 
-Lanjut, [laporan shift kasir](/panduan/laporan-shift).
+Lanjut, [laporan shift kasir](/panduan/laporan-shift-kasir).

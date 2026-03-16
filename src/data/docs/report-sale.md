@@ -20,6 +20,10 @@ Di bagian atas terdapat informasi total penjualan (pendapatan) dan total transak
 
 Di bawahnya terdapat tabel daftar penjualan pada periode yang dipilih.
 
+Untuk mendownload laporan menjadi file PDF, klik tombol `Download PDF`.
+
+Untuk mendownload laporan menjadi file Excel, klik tombol `Download Excel`.
+
 ---
 
 Lanjut, [laporan stok](/panduan/laporan-stok).
