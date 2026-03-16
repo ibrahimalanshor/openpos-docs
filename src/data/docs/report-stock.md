@@ -6,18 +6,20 @@ order: 2
 parent: laporan
 ---
 
-Pengeluaran operasional adalah fitur untuk mencatat pengeluaran operasional pada toko.
+Laporan stok adalah laporan yang berisi daftar stok per barang dalam periode tertentu (hari, bulan, tahun).
 
-Pengeluaran operasional digunakan untuk komponen perhitungan laba bersih.
+Untuk membuat laporan stok, klik `Menu Laporan > Laporan Stok` di menu samping kiri.
 
-Contoh pengeluaran operasional:
+Setelah terbuka, pilih periode laporan, tanggal/bulan/tahun.
 
-- Bayar listrik
-- Bayar wifi
-- Gaji karyawan
-- dll
+Lalu klik tombol `Tampilkan`.
 
-Berikut panduan mencatat pengeluaran operasional di aplikasi OpenPos:
+Akan muncul laporan stok sesuai periode yang dipilih.
 
-1. [Cara mencatat pengeluaran operasional](/panduan/cara-mencatat-pengeluaran-operasional)
-2. [Cara menampilkan pengeluaran operasional per hari](/panduan/cara-menampilkan-pengeluaran-operasional)
+Di bagian atas terdapat informasi total awal awal, total stok masuk, total stok keluar.
+
+Di bawahnya terdapat tabel daftar stok per barang pada periode yang dipilih, lengkap dengan stok awal, total stok masuk dan total stok keluar.
+
+---
+
+Lanjut, [laporan stok opname](/panduan/laporan-stok-opname).
