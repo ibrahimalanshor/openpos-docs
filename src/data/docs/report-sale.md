@@ -6,18 +6,20 @@ order: 1
 parent: laporan
 ---
 
-Pengeluaran operasional adalah fitur untuk mencatat pengeluaran operasional pada toko.
+Laporan penjualan adalah laporan yang berisi riwayat transaksi penjualan dalam periode tertentu (hari, bulan, tahun).
 
-Pengeluaran operasional digunakan untuk komponen perhitungan laba bersih.
+Untuk membuat laporan penjualan, klik `Menu Laporan > Laporan Penjualan` di menu samping kiri.
 
-Contoh pengeluaran operasional:
+Setelah terbuka, pilih periode laporan, tanggal/bulan/tahun.
 
-- Bayar listrik
-- Bayar wifi
-- Gaji karyawan
-- dll
+Lalu klik tombol `Tampilkan`.
 
-Berikut panduan mencatat pengeluaran operasional di aplikasi OpenPos:
+Akan muncul laporan penjualan sesuai periode yang dipilih.
 
-1. [Cara mencatat pengeluaran operasional](/panduan/cara-mencatat-pengeluaran-operasional)
-2. [Cara menampilkan pengeluaran operasional per hari](/panduan/cara-menampilkan-pengeluaran-operasional)
+Di bagian atas terdapat informasi total penjualan (pendapatan) dan total transaksi.
+
+Di bawahnya terdapat tabel daftar penjualan pada periode yang dipilih.
+
+---
+
+Lanjut, [laporan stok](/panduan/laporan-stok).

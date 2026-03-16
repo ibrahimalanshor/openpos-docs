@@ -10,6 +10,8 @@ Laporan adalah informasi yang dikumpulkan terkait penjualan, stok, laba, dsb pad
 
 Laporan dibuat secara otomatis di aplikasi OpenPos, berikut beberapa daftar laporann yang dapat dilihat:
 
+Semua laporan dapat diexport ke file PDF dan CSV.
+
 1. [Laporan Penjualan](/panduan/laporan-penjualan)
 2. [Laporan Stok](/panduan/laporan-stok)
 3. [Laporan Stok Opname](/panduan/laporan-stok-opname)
