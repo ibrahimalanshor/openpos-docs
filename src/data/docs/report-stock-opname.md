@@ -6,18 +6,18 @@ order: 3
 parent: laporan
 ---
 
-Pengeluaran operasional adalah fitur untuk mencatat pengeluaran operasional pada toko.
+Laporan stok opname adalah laporan yang berisi riwayat stok opname dalam periode tertentu (hari, bulan).
 
-Pengeluaran operasional digunakan untuk komponen perhitungan laba bersih.
+Untuk membuat laporan stok opname, klik `Menu Laporan > Laporan Stok Opname` di menu samping kiri.
 
-Contoh pengeluaran operasional:
+Setelah terbuka, pilih periode laporan, tanggal/bulan/tahun.
 
-- Bayar listrik
-- Bayar wifi
-- Gaji karyawan
-- dll
+Lalu klik tombol `Tampilkan`.
 
-Berikut panduan mencatat pengeluaran operasional di aplikasi OpenPos:
+Akan muncul laporan stok opname sesuai periode yang dipilih.
 
-1. [Cara mencatat pengeluaran operasional](/panduan/cara-mencatat-pengeluaran-operasional)
-2. [Cara menampilkan pengeluaran operasional per hari](/panduan/cara-menampilkan-pengeluaran-operasional)
+Laporan dalam bentuk tabel daftar stok opname pada periode yang dipilih.
+
+---
+
+Lanjut, [laporan shift kasir](/panduan/laporan-shift).

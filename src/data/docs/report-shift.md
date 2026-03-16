@@ -1,6 +1,6 @@
 ---
 title: Laporan Shift
-slug: laporan-shift
+slug: laporan-shift-kasir
 summary: Cara membuat laporan shift kasir toko lewat aplikasi OpenPos
 order: 4
 parent: laporan
