@@ -6,18 +6,22 @@ order: 6
 parent: laporan
 ---
 
-Pengeluaran operasional adalah fitur untuk mencatat pengeluaran operasional pada toko.
+Laporan laba adalah laporan yang berisi laba / keuntungan toko pada bulan tertentu.
 
-Pengeluaran operasional digunakan untuk komponen perhitungan laba bersih.
+Untuk membuat laporan laba, klik `Menu Laporan > Laporan Laba` di menu samping kiri.
 
-Contoh pengeluaran operasional:
+Setelah terbuka, pilih bulan yang ingin dilihat labanya.
 
-- Bayar listrik
-- Bayar wifi
-- Gaji karyawan
-- dll
+Lalu klik tombol `Tampilkan`.
 
-Berikut panduan mencatat pengeluaran operasional di aplikasi OpenPos:
+Akan muncul laporan laba sesuai periode yang dipilih. Detailnya:
 
-1. [Cara mencatat pengeluaran operasional](/panduan/cara-mencatat-pengeluaran-operasional)
-2. [Cara menampilkan pengeluaran operasional per hari](/panduan/cara-menampilkan-pengeluaran-operasional)
+- Pendapatan, total penjuaaln kasir.
+- HPP, harga pokok penjualan (total harga produksi / harga pembelian barang), menggunakan metode rata-rata.
+- Laba kotor, keuntungan kotor, dihitung dari `pendapatan - hpp`.
+- Biaya operasional, total biaya operasional (dari menu pengeluaran).
+- Laba, keuntungan bersih, dihitung dari `laba kotor - biaya operasional`.
+- Margin kotor, perbandingan laba kotor dengan pendapatan.
+- Margin bersih, perbandingan laba bersih dengan pendapatan.
+
+Untuk mendownload laporan laba menjadi file PDF, klik tombol `Download PDF`.
