@@ -1,5 +1,6 @@
 ---
 title: Mengelola Pengguna
+slug: pengguna
 summary: Mengelola siapa saja yang bisa menggunakan aplikasi.
 order: 10
 icon: tabler:users
@@ -16,7 +17,7 @@ Ada empat jenis pengguna di aplikasi OpenPos:
 
 Berikut beberapa cara untuk mengelola pengguna di aplikasi OpenPos:
 
-1. [Cara menampilkan pengguna aplikasi](/cara-menampilkan-pengguna-aplikasi)
-2. [Cara menambahkan pengguna aplikasi](/cara-menambahkan-pengguna-aplikasi)
-3. [Cara mengedit pengguna aplikasi](/cara-mengedit-pengguna-aplikasi)
-4. [Cara menghapus pengguna aplikasi](/cara-menghapus-pengguna-aplikasi)
+1. [Cara menampilkan pengguna aplikasi](/panduan/cara-menampilkan-pengguna-aplikasi)
+2. [Cara menambahkan pengguna aplikasi](/panduan/cara-menambahkan-pengguna-aplikasi)
+3. [Cara mengedit pengguna aplikasi](/panduan/cara-mengedit-pengguna-aplikasi)
+4. [Cara menghapus pengguna aplikasi](/panduan/cara-menghapus-pengguna-aplikasi)
