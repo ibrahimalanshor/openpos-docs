@@ -1,17 +1,27 @@
 ---
-title: Cara Menampilkan Pengguna Aplikasi
+title: Cara Menampilkan Daftar Pengguna Aplikasi
 slug: cara-menampilkan-pengguna-aplikasi
 summary: Cara menampilkan pengguna aplikasi
 order: 1
 parent: pengguna
 ---
 
-Struk adalah bukti penjualan yang berisi detail informasi penjualan yang dicetak dan diberikan kepada pelanggan.
+Untuk menampilkan daftar pengguna yang ada di aplikasi OpenPos, pertama buka menu `Pengguna` di menu samping kiri.
 
-Untuk mencetak struk penjualan, pastikan thermal printer sudah disiapkan. Baca [cara menyiapkan thermal printer](/panduan/cara-menyiapkan-thermal-printer)
+Setelah menu terbuka, akan ditampilkan tabel daftar pengguna yang berisi:
 
-Setiap printer siap, berikut cara mencetak struk penjualan.
+- Nama pengguna
+- Email pengguna
+- Role (jenis) pengguna
 
-Pertama, buat penjualan baru, isi semua detail penjualan, lalu klik simpan.
+## Mencari Pengguna
 
-Setelah disimpan, akan muncul notifikasi penjualan berhasil, klik tombol `Cetak Struk`. Secara otomatis struk akan dicetak dari thermal printer yang sudah disiapkan.
+Untuk mencari pengguna, ketikkan nama pengguna di kotak pencarian atas.
+
+## Menampilkan Pengguna Berdasarkan Role (Jenis)
+
+Untuk menampilkan pengguna berdasarkan role (jenis), pilih role di kotak pilihan role.
+
+---
+
+Lanjut, [cara menambahkan pengguna aplikasi](/panduan/cara-menambahkan-pengguna-aplikasi).
