@@ -2,7 +2,7 @@
 title: Cara Menghapus Pengguna Aplikasi
 slug: cara-menghapus-pengguna-aplikasi
 summary: Cara menghapus pengguna aplikasi
-order: 4
+order: 5
 parent: pengguna
 ---
 
