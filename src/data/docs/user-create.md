@@ -6,22 +6,16 @@ order: 2
 parent: pengguna
 ---
 
-Struk adalah bukti penjualan yang berisi detail informasi penjualan yang dicetak dan diberikan kepada pelanggan.
+Untuk menambahkan pengguna baru ke aplikasi, buka menu `Pengguna` di menu samping kiri.
 
-Untuk mencetak struk penjualan, pastikan thermal printer sudah disiapkan. Baca [cara menyiapkan thermal printer](/panduan/cara-menyiapkan-thermal-printer)
+Setelah terbuka, klik tombol `+ Pengguna`.
 
-Setiap printer siap, berikut cara mencetak struk penjualan.
+Akan muncuk _popup_ yang berisi form detail pengguna, masukkan semua data pengguna baru.
 
-Pertama, buat penjualan baru, isi semua detail penjualan, lalu klik simpan.
+Setelah lengkap, klik tombol `Simpan`.
 
-Setelah disimpan, akan muncul notifikasi penjualan berhasil, klik tombol `Cetak Struk`. Secara otomatis struk akan dicetak dari thermal printer yang sudah disiapkan.
+Jika berhasil tersimpan, pengguna baru akan muncul di tabel daftar pengguna.
 
-Struk adalah bukti penjualan yang berisi detail informasi penjualan yang dicetak dan diberikan kepada pelanggan.
+---
 
-Untuk mencetak struk penjualan, pastikan thermal printer sudah disiapkan. Baca [cara menyiapkan thermal printer](/panduan/cara-menyiapkan-thermal-printer)
-
-Setiap printer siap, berikut cara mencetak struk penjualan.
-
-Pertama, buat penjualan baru, isi semua detail penjualan, lalu klik simpan.
-
-Setelah disimpan, akan muncul notifikasi penjualan berhasil, klik tombol `Cetak Struk`. Secara otomatis struk akan dicetak dari thermal printer yang sudah disiapkan.
+Lanjut, [cara mengedit pengguna aplikasi](/panduan/cara-mengedit-pengguna-aplikasi).
