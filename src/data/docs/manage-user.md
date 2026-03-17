@@ -20,4 +20,5 @@ Berikut beberapa cara untuk mengelola pengguna di aplikasi OpenPos:
 1. [Cara menampilkan pengguna aplikasi](/panduan/cara-menampilkan-pengguna-aplikasi)
 2. [Cara menambahkan pengguna aplikasi](/panduan/cara-menambahkan-pengguna-aplikasi)
 3. [Cara mengedit pengguna aplikasi](/panduan/cara-mengedit-pengguna-aplikasi)
-4. [Cara menghapus pengguna aplikasi](/panduan/cara-menghapus-pengguna-aplikasi)
+4. [Cara mengubah password pengguna aplikasi](/panduan/cara-mengubah-password-pengguna-aplikasi)
+5. [Cara menghapus pengguna aplikasi](/panduan/cara-menghapus-pengguna-aplikasi)

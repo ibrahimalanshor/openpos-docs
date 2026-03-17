@@ -12,6 +12,8 @@ Pilih pengguna yang ingin diedit di tabel daftar pengguna, lalu klik tombol edit
 
 Akan muncuk _popup_ yang berisi form detail pengguna, masukkan semua data pengguna yang ingin diubah.
 
+Untuk bagian password, jika tidak ingin diubah maka dibiarkan kosong.
+
 Setelah lengkap, klik tombol `Simpan`.
 
 Jika berhasil tersimpan, data pengguna akan berubah di tabel daftar pengguna.
