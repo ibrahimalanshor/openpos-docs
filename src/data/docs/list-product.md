@@ -10,13 +10,19 @@ Untuk melihat daftar barang klik menu `Barang` di menu samping kiri.
 
 Setelah diklik, halaman daftar barang akan terbuka dan muncul semua daftar barang dalam bentuk tabel.
 
+![Daftar Barang](./images/manage-product.png)
+
 ## Mencari Barang
 
 Untuk mencari barang, masukkan nama barang yang ingin dicari di kotak pencarian di atas tabel daftar barang.
 
+![Mencari Barang](./images/search-product.png)
+
 ### Mencari Barang Berdasarkan Barcode
 
 Klik kotak pencarian di atas tabel daftar barang, masukkan kode barcode dengan keyboard atau dengan alat barcode scanner.
+
+![Mencari Barang Barcode](./images/search-product-barcode.png)
 
 ## Melihat Detail Barang
 
@@ -30,6 +36,8 @@ Setelah diklik akan muncul _pop up_ yang menampilkan detail barang seperti:
 - Harga jual
 - HPP
 - dll
+
+![Detail Barang](./images/detail-product.png)
 
 ---
 

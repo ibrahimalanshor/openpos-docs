@@ -14,4 +14,6 @@ Setiap printer siap, berikut cara mencetak struk penjualan.
 
 Pertama, buat penjualan baru, isi semua detail penjualan, lalu klik simpan.
 
+![Cetak Struk Penjualan](./images/print-sale.png)
+
 Setelah disimpan, akan muncul notifikasi penjualan berhasil, klik tombol `Cetak Struk`. Secara otomatis struk akan dicetak dari thermal printer yang sudah disiapkan.

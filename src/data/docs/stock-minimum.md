@@ -16,6 +16,8 @@ Di tabel daftar barang, pilih barang yang mau diatur stok minimumnya, lalu klik 
 
 Setelah diklik akan muncul _popup_ form detail barang, terdapat input minimal stok. Masukkan stok minimal barang yang ingin diatur.
 
+![Edit Minimum Stok Barang](./images/edit-product.png)
+
 Setelah itu klik simpan. Stok minimum barang sudah berhasil diatur.
 
 ---

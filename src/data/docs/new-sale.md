@@ -8,9 +8,13 @@ parent: penjualan
 
 Untuk membuat penjualan barang, buka menu `Penjualan` di menu samping kiri.
 
+![Daftar Penjualan](./images/sale-list.png)
+
 Setlah menu dibuka klik tombol `Tambah Penjualan`. Tombol ini hanya muncul di pengguna kasir. Tombol ini hanya bisa diklik jika kasir sudah memulai shift.
 
 Untuk memulai shift, baca [cara memulai shift kasir](/panduan/cara-memulai-shift-kasir).
+
+![Tambah Penjualan](./images/add-sale.png)
 
 Setelah halaman `Tambah Penjualan` terbuka, klik kotak input pencarian barang.
 
@@ -23,6 +27,8 @@ Atau bisa diubah langsung di kotak jumlah barang.
 Setelah semua barang ditambahkan, pilih metode pembayaran, dan masukkan jumlah pembayarannya.
 
 Setelah selesai semua klik simpan.
+
+![Konfirmasi Penjualan](./images/confirm-sale.png)
 
 Setelah tersimpan, akan muncul _popup_ berhasil simpan, klik `Cetak Struk` untuk mencetak struk penjualan ke printer.
 

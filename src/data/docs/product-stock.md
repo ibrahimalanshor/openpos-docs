@@ -12,6 +12,8 @@ Cari barang yang ingin dilihat stoknya dengan memasukkan namanya di kotak pencar
 
 Setelah ditemukan, klik barangnya, maka akan muncul _popup_ detail barang.
 
+![Detail Barang](./images/detail-product.png)
+
 Pada detail barang, dapat dilihat.
 
 - Stok barang saat ini

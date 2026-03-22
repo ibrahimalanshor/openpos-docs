@@ -6,6 +6,8 @@ order: 1
 parent: dashboard
 ---
 
+![Grafik Dashboard](./images/dashboard-graph.png)
+
 Grafik toko adalah informasi statistik toko yang disajikan dalam bentuk visual.
 
 Grafik toko hanya bisa dilihat oleh pengguna Admin dan Manager.

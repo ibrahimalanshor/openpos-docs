@@ -20,6 +20,8 @@ www.tokobarokah.id
 
 Setelah url toko dibuka di browser, akan muncul halaman login pengguna. Masukkan username dan password untuk bisa masuk ke aplikasi.
 
+![Halaman Login](./images/login.png)
+
 Lebih lanjut baca [cara login pengguna](/panduan/cara-login-pengguna).
 
 ## Offline Mode

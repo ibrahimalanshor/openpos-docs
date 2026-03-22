@@ -16,6 +16,8 @@ Untuk menampilkan barang mana saja berdasarkan statusnya, pertama buka menu `Daf
 
 Pilih status stok yang ingin ditampilkan di kotak pilihan status stok.
 
+![Status Stok Barang](./images/filter-stock.png)
+
 Setelah dipilih daftar barang yang ditampilkan akan berdasarkan status stok yang dipilih.
 
 ---

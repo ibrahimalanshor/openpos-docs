@@ -15,6 +15,8 @@ Akun pengguna akan dibagikan setelah pembayaran.
 
 Setelah [membuka alamat url toko Anda](/panduan/cara-menggunakan-aplikasi), akan tampil sebuah form login, masukkan username dan password Anda pada form tersebut.
 
+![Halaman Login](./images/login.png)
+
 Jika salah maka akan muncul peringatan.
 
 Jika benar maka halaman dashboard dari aplikasi OpenPos akan dibuka.

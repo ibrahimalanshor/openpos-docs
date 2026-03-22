@@ -10,13 +10,19 @@ Restok barang adalah cara untuk membuat pembelian barang ke supplier untuk menam
 
 Sebelum melakukan restok, pastikan untuk menambahkan supplier terlebih dahulu di menu `Supplier`. Di menu tersebut, Anda bisa melihat daftar supplier, menambahkan supplier baru, mengedit supplier dan menghapusnya.
 
+![Daftar Supplier](./images/supplier.png)
+
 Setelah ada supplier, restock bisa dibuat. Pertama, buka menu `Restock` di menu samping kiri.
 
 Setelah dibuka akan muncul daftar riwayat restok yang pernah dibuat.
 
+![Daftar Restock](./images/restock-list.png)
+
 Untuk membuat restok baru, klik tombol `Tambah Restok`, sampai muncul halaman `Tambah Restok`.
 
 Setelah halaman `Tambah Restok` terbuka, pilih supplier mana yang akan digunakan untuk restok.
+
+![Tambah Restock](./images/add-restock.png)
 
 Setelah supplier dipilih, akan muncul kotak input pencarian barang yang akan direstok. Ketikkan pada kotak tersebut nama barang dan pilih barang yang ingin direstok.
 
@@ -31,6 +37,8 @@ Atau bisa diketikan langsung di kotak jumlah barangya.
 Untuk menghapus barang, klik tombol merah ikon sampah.
 
 Setelah semua barang restok sudah dimasukkan, klik tombol simpan.
+
+![Simpan Restock](./images/restock-form.png)
 
 Restok berhasil dibuat, cek [cara melihat stok barang](/panduan/cara-melihat-stok-barang) untuk melihat stok barang yang seharusnya bertambah.
 

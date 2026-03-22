@@ -6,6 +6,8 @@ order: 1
 parent: dashboard
 ---
 
+![Statistik Dashboard](./images/dashboard-stats.png)
+
 Statistik toko adalah kumpulan data informasi seputar toko dalam bentuk angka.
 
 Statistik toko dapat dilihat di menu dashboard.

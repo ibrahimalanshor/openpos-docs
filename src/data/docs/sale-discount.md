@@ -19,6 +19,8 @@ Untuk menambahkan diskon per barang, masukkan barangnya terlebih dahulu ke baran
 
 Setelah dimasukkan tekan tombol `Diskon` di barang yang ingin diberi diskon.
 
+![Diskon Barang Penjualan](./images/discount-product.png)
+
 Pilih jenis diskon, bisa persen (%) atau angka bulat.
 
 Masukkan nilai diskonnya.
@@ -30,6 +32,8 @@ Untuk menghapus diskon klik ikon silang di diskon barang.
 ## Menambahkan Diskon Total Penjualan
 
 Untuk menambahkan diskon total penjualan, klik tombol `Diskon` di atas total harga penjualan.
+
+![Diskon Penjualan](./images/discount-sale.png)
 
 Pilih jenis diskon, bisa persen (%) atau angka bulat.
 

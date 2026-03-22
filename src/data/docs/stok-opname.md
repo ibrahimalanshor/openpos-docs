@@ -10,7 +10,11 @@ Stok opname adalah cara untuk menyesuaikan stok yang ada di aplikasi OpenPos den
 
 Cara untuk membuat stok opname, pertama buka menu `Stok Opname` di menu samping kiri.
 
+![Daftar Stok Opname](./images/stock-opname-list.png)
+
 Setelah menu dibuka, akan tampil daftar stok opname yang pernah dibuat. Untuk membuat baru klik tombol `Tambah Stok Opname`.
+
+![Tambah Stok Opname](./images/stock-opname-form.png)
 
 Setelah tombol diklik, halaman tambah stok opname akan terbuka.
 

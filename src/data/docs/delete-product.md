@@ -12,6 +12,8 @@ Setelah dibuka, pilih barang yang ingin dihapus pada tabel barang.
 
 Setelah diklik akan muncul _popup_ konfirmasi hapus, klik tombol `Konfirmasi`.
 
+![Hapus Barang](./images/delete-product.png)
+
 Jika berhasil dihapus, maka _popup_ akan hilang dan muncul notifikasi berhasil dihapus.
 
 ---

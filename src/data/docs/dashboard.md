@@ -7,6 +7,8 @@ icon: tabler:chart-area
 
 Dashboard adalah menu/halaman yang pertama kali dibuka setelah Anda login ke aplikasi OpenPos.
 
+![Halaman Dashboard](./images/dashboard.png)
+
 Ada dua aksi / fitur pada halaman ini, yaitu:
 
 1. [Melihat statistik toko](/panduan/cara-melihat-statistik-toko)

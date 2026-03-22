@@ -14,6 +14,8 @@ Untuk melihat pergerakan stok barang, buka menu daftar barang. Lalu pilih barang
 
 Setelah muncul _popup_ detail barang, di bagian bawah terdapat tabel pergerakan stok barang.
 
+![Detail Barang](./images/detail-product.png)
+
 Ada beberapa informasi yang ditampilkan:
 
 1. Tanggal dan waktu pergerakan stok.

@@ -34,6 +34,8 @@ Setelah file `.csv` barang sudah siap, buka halaman `Barang` di menu samping kir
 
 Klik tombol `Import Barang`, maka akan muncul _popup_ untuk mengupload file `.csv` barang.
 
+![Import Barang](./images/import-product.png)
+
 Masukkan file `.csv` barang lalau tekan tombol `Import`.
 
 Tunggu hingga selesai. Setelah selesai, akan muncul notifikasi berhasil import, dan barang bisa dilihat di daftar barang.

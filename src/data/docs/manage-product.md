@@ -6,6 +6,8 @@ order: 4
 icon: tabler:box
 ---
 
+![Mengelola Barang](./images/manage-product.png)
+
 Mengelola barang adalah salah satu fitur utama pada aplikasi OpenPos.
 
 Ada beberapa jenis pengelolaan barang yang bisa dilakukan di aplikasi OpenPos:

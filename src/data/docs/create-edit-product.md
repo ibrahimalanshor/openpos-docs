@@ -12,6 +12,8 @@ Setelah dibuka, klik tombol `Tambah Barang` di atas tabel daftar barang.
 
 Setelah diklik akan muncul _popup_ yang menampilkan form detail barang. Masukkan detail barang yang ingin ditambahkan.
 
+![Tambah Barang](./images/add-product.png)
+
 Setelah lengkap, klik tombol `Simpan` di bawah form.
 
 Jika berhasil disimpan, maka _popup_ akan hilang dan muncul notifikasi berhasil disimpan.
@@ -28,6 +30,8 @@ Jika gagal, akan muncul pesan kenapa gagal, berikut beberapa di antaranya:
 Untuk mengedit barang, klik tombol pensil berwarna hijau pada barang yang ingin diedit.
 
 Setelah diklik akan muncul _popup_ yang menampilkan form detail barang. Masukkan detail barang yang ingin diubah.
+
+![Edit Barang](./images/edit-product.png)
 
 Setelah lengkap, klik tombol `Simpan` di bawah form.
 
